@@ -370,18 +370,18 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">用户价值分类统计</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">风控</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">RFM + 用户转化分析</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">不同价值族群的转化漏斗</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">不同用户价值族群的消费分布</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">RFM + 用户转化分析</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">不同价值族群的转化漏斗</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">不同用户价值族群的消费分布</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">优惠券RFM</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">不同用户价值族群使用的优惠券类型占比</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">优惠券RFM</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">不同用户价值族群使用的优惠券类型占比</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#top1unkown">不同用户价值族群使用的优惠券类型占比(去除top1和Unkown)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">结论</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">结论</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">风控</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">模型</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1">Part 1 概述</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">标签</a></li>
@@ -390,6 +390,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2">Part 2 标签构建</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3">Part 3 特征工程</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-4">Part 4 模型</a></li>
 </ul>
 </li>
 </ul>
@@ -1088,7 +1090,7 @@ memory usage: 256.0+ bytes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/2af8fabb3a2a03c048f9bf6916929d2e77b16abfaf313293d3bc70d48861ecfd.png" src="_images/2af8fabb3a2a03c048f9bf6916929d2e77b16abfaf313293d3bc70d48861ecfd.png" />
+<img alt="_images/87eee662b8f31da317a316655cae74da39c409d808bea24ad309d49adcbf3395.png" src="_images/87eee662b8f31da317a316655cae74da39c409d808bea24ad309d49adcbf3395.png" />
 </div>
 </div>
 </section>
@@ -1122,7 +1124,7 @@ memory usage: 256.0+ bytes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12234cbac6b65e9f9742d96f6dbcd7a495e06ca3c5270a59c1d41f72f2bd71bd.png" src="_images/12234cbac6b65e9f9742d96f6dbcd7a495e06ca3c5270a59c1d41f72f2bd71bd.png" />
+<img alt="_images/fcef0293cdf58d46b671a956283bdfb5823e6523e8211d3636e867f4504f8e81.png" src="_images/fcef0293cdf58d46b671a956283bdfb5823e6523e8211d3636e867f4504f8e81.png" />
 </div>
 </div>
 </section>
@@ -1526,7 +1528,7 @@ memory usage: 256.0+ bytes
     </tr>
   </tbody>
 </table>
-</div></div><img alt="_images/4cf62168410fc56e12c83bdecf595b9fdfd6e8cf1e5ee55906e4174bffb8d496.png" src="_images/4cf62168410fc56e12c83bdecf595b9fdfd6e8cf1e5ee55906e4174bffb8d496.png" />
+</div></div><img alt="_images/6b93c9b627b90a003842335cc49398dcfea157c1c370179984062437815753b3.png" src="_images/6b93c9b627b90a003842335cc49398dcfea157c1c370179984062437815753b3.png" />
 </div>
 </div>
 <p>要对这些优惠券数据进行分类，我们可以根据不同的特征值（如：券均优惠价格、优惠比例等）来定义不同的类别。以下是几种可能的分类方式：</p>
@@ -1574,12 +1576,12 @@ memory usage: 256.0+ bytes
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>┌───────────────────┬────────────────────┬──────────────┐
-│ p20_券均优惠价格  │    p20_优惠比例    │ p20_使用次数 │
-│      double       │       double       │    double    │
-├───────────────────┼────────────────────┼──────────────┤
-│ 2.305096723073124 │ 1.0671126828117985 │        172.0 │
-└───────────────────┴────────────────────┴──────────────┘
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>┌────────────────────┬────────────────────┬──────────────┐
+│  p20_券均优惠价格  │    p20_优惠比例    │ p20_使用次数 │
+│       double       │       double       │    double    │
+├────────────────────┼────────────────────┼──────────────┤
+│ 2.3050967230731225 │ 1.0671126828117985 │        172.0 │
+└────────────────────┴────────────────────┴──────────────┘
 </pre></div>
 </div>
 </div>
@@ -1611,7 +1613,7 @@ memory usage: 256.0+ bytes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/bef569c23049e07f3efba5536901107eac76f71ebeb0d629ba359673631978da.png" src="_images/bef569c23049e07f3efba5536901107eac76f71ebeb0d629ba359673631978da.png" />
+<img alt="_images/12f414fcd501d394e78112156d5f1c04e0d385d5567aabc650b0cd8a6ea5c90b.png" src="_images/12f414fcd501d394e78112156d5f1c04e0d385d5567aabc650b0cd8a6ea5c90b.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1645,7 +1647,7 @@ memory usage: 256.0+ bytes
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/f9f624e86483b06843ffd7e070f07b8644a014ea33b04900bbd5d38edf88b338.png" src="_images/f9f624e86483b06843ffd7e070f07b8644a014ea33b04900bbd5d38edf88b338.png" />
+<img alt="_images/876375dadfba8d95effa6daa87e65c3fbec925c01d76941816fc7394d708dc4b.png" src="_images/876375dadfba8d95effa6daa87e65c3fbec925c01d76941816fc7394d708dc4b.png" />
 </div>
 </div>
 <p>在使用 K均值聚类进行优惠券分类时，我们选择了三个特征来进行聚类：</p>
@@ -1786,7 +1788,7 @@ K均值聚类通过计算每个数据点（在这里是每种优惠券）的距�
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/94dadc42e1dc1c97dc321b99ad0bcdb561306bbbe32f6d2947273a1c34ee8d83.png" src="_images/94dadc42e1dc1c97dc321b99ad0bcdb561306bbbe32f6d2947273a1c34ee8d83.png" />
+<img alt="_images/dc8a03ecf3dfbd577f21c20f09b9f933ceb80352e5bd37f293e06645e9e709bc.png" src="_images/dc8a03ecf3dfbd577f21c20f09b9f933ceb80352e5bd37f293e06645e9e709bc.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1837,202 +1839,10 @@ K均值聚类通过计算每个数据点（在这里是每种优惠券）的距�
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">order_detail</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">order_detail</span><span class="p">,</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Coupon_type&#39;</span><span class="p">,</span> <span class="s1">&#39;优惠券类别&#39;</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;Coupon_type&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Coupon_type</th>
-      <th>券均优惠价格</th>
-      <th>优惠比例</th>
-      <th>优惠比例分类</th>
-      <th>券均优惠价格分类</th>
-      <th>优惠券类别</th>
-      <th>商品平均价格</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>20013.0000000000</td>
-      <td>2.5482350000</td>
-      <td>5.5075860000</td>
-      <td>中比例优惠</td>
-      <td>中等优惠券</td>
-      <td>中比例优惠中等优惠券</td>
-      <td>46.2677296369</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>20011.0000000000</td>
-      <td>9.0185560000</td>
-      <td>6.8071340000</td>
-      <td>中比例优惠</td>
-      <td>高价优惠券</td>
-      <td>中比例优惠高价优惠券</td>
-      <td>132.4868292588</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9.0000000000</td>
-      <td>8.9276340000</td>
-      <td>19.2073420000</td>
-      <td>高比例优惠</td>
-      <td>高价优惠券</td>
-      <td>高比例优惠高价优惠券</td>
-      <td>46.4803198693</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.0000000000</td>
-      <td>1.8468000000</td>
-      <td>0.9679790000</td>
-      <td>低比例优惠</td>
-      <td>低价优惠券</td>
-      <td>低比例优惠低价优惠券</td>
-      <td>190.7892629902</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>10015.0000000000</td>
-      <td>4.8580810000</td>
-      <td>98.9965170000</td>
-      <td>高比例优惠</td>
-      <td>中等优惠券</td>
-      <td>高比例优惠中等优惠券</td>
-      <td>4.9073251739</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.0000000000</td>
-      <td>2.6240680000</td>
-      <td>1.0671130000</td>
-      <td>低比例优惠</td>
-      <td>中等优惠券</td>
-      <td>低比例优惠中等优惠券</td>
-      <td>245.9034797627</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>5.0000000000</td>
-      <td>8.1893550000</td>
-      <td>14.9355590000</td>
-      <td>高比例优惠</td>
-      <td>高价优惠券</td>
-      <td>高比例优惠高价优惠券</td>
-      <td>54.8312587430</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>11.0000000000</td>
-      <td>3.5571430000</td>
-      <td>4.6605650000</td>
-      <td>中比例优惠</td>
-      <td>中等优惠券</td>
-      <td>中比例优惠中等优惠券</td>
-      <td>76.3242868622</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>3.0000000000</td>
-      <td>7.0602150000</td>
-      <td>5.2943710000</td>
-      <td>中比例优惠</td>
-      <td>中等优惠券</td>
-      <td>中比例优惠中等优惠券</td>
-      <td>133.3532349735</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>2.0000000000</td>
-      <td>3.0172430000</td>
-      <td>9.0978490000</td>
-      <td>中比例优惠</td>
-      <td>中等优惠券</td>
-      <td>中比例优惠中等优惠券</td>
-      <td>33.1643556625</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>10.0000000000</td>
-      <td>3.8614690000</td>
-      <td>6.8875070000</td>
-      <td>中比例优惠</td>
-      <td>中等优惠券</td>
-      <td>中比例优惠中等优惠券</td>
-      <td>56.0648286818</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>1.0000000000</td>
-      <td>2.3050970000</td>
-      <td>6.7622170000</td>
-      <td>中比例优惠</td>
-      <td>低价优惠券</td>
-      <td>中比例优惠低价优惠券</td>
-      <td>34.0878886318</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>20014.0000000000</td>
-      <td>0.2454210000</td>
-      <td>0.5364930000</td>
-      <td>低比例优惠</td>
-      <td>低价优惠券</td>
-      <td>低比例优惠低价优惠券</td>
-      <td>45.7454244510</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>10010.0000000000</td>
-      <td>6.5483900000</td>
-      <td>7.4927500000</td>
-      <td>中比例优惠</td>
-      <td>中等优惠券</td>
-      <td>中比例优惠中等优惠券</td>
-      <td>87.3963498048</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>6.0000000000</td>
-      <td>0.0595480000</td>
-      <td>0.1390070000</td>
-      <td>低比例优惠</td>
-      <td>低价优惠券</td>
-      <td>低比例优惠低价优惠券</td>
-      <td>42.8381304539</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>10012.0000000000</td>
-      <td>14.6184200000</td>
-      <td>10.7296730000</td>
-      <td>高比例优惠</td>
-      <td>高价优惠券</td>
-      <td>高比例优惠高价优惠券</td>
-      <td>136.2429218486</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2109,7 +1919,7 @@ K均值聚类通过计算每个数据点（在这里是每种优惠券）的距�
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8aa4524dc1daadf4ef1428c1f29fd500df70f0a68c1685479548a7b3dc190d28.png" src="_images/8aa4524dc1daadf4ef1428c1f29fd500df70f0a68c1685479548a7b3dc190d28.png" />
+<img alt="_images/37f57dae203093db50a2aea96c18b4a6aa52e68f075ad9b71daed14750babc17.png" src="_images/37f57dae203093db50a2aea96c18b4a6aa52e68f075ad9b71daed14750babc17.png" />
 </div>
 </div>
 </section>
@@ -2177,7 +1987,7 @@ K均值聚类通过计算每个数据点（在这里是每种优惠券）的距�
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/7d0f381cdbb9e38e718e4c83f833464932dbd6a4b3e306b5c27b39345523623f.png" src="_images/7d0f381cdbb9e38e718e4c83f833464932dbd6a4b3e306b5c27b39345523623f.png" />
+<img alt="_images/d5a84c55ae992905b5545999814b5e05c07176240376b0348be3c8e1850b696f.png" src="_images/d5a84c55ae992905b5545999814b5e05c07176240376b0348be3c8e1850b696f.png" />
 </div>
 </div>
 </section>
@@ -2218,7 +2028,7 @@ K均值聚类通过计算每个数据点（在这里是每种优惠券）的距�
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>人均使用优惠券次数: 44.70
 </pre></div>
 </div>
-<img alt="_images/833c7dc3c3ee4d14155c4ed573e9aba54e4e63aade0c2483922a8b7463a2bc0e.png" src="_images/833c7dc3c3ee4d14155c4ed573e9aba54e4e63aade0c2483922a8b7463a2bc0e.png" />
+<img alt="_images/105d65337e84d3fa9c041ba4f5eebc8ba15d7b09a4848e9fe35404e42a9883d3.png" src="_images/105d65337e84d3fa9c041ba4f5eebc8ba15d7b09a4848e9fe35404e42a9883d3.png" />
 </div>
 </div>
 </section>
@@ -2902,7 +2712,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/4136bf848276e0f510eb020a2300981c7da3a514cbc3d9437d354e97e8c94d87.png" src="_images/4136bf848276e0f510eb020a2300981c7da3a514cbc3d9437d354e97e8c94d87.png" />
+<img alt="_images/bd201cedddd3525937995dc60feca93263d76c963ee62c136e0b03323fb17a0f.png" src="_images/bd201cedddd3525937995dc60feca93263d76c963ee62c136e0b03323fb17a0f.png" />
 </div>
 </div>
 <p>大概可以通过消费券类型区分出用户群体？</p>
@@ -2971,98 +2781,98 @@ dtype: float64
   <tbody>
     <tr>
       <th>0</th>
-      <td>99.0589741245</td>
-      <td>546850</td>
+      <td>99.0586960818</td>
+      <td>546476</td>
       <td>1.0000000000</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>91.9456921192</td>
-      <td>19592</td>
+      <td>92.0333649668</td>
+      <td>20021</td>
       <td>3.0000000000</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>95.9246275197</td>
-      <td>18256</td>
+      <td>95.9482521332</td>
+      <td>18165</td>
       <td>6.0000000000</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>95.9839759639</td>
-      <td>9985</td>
+      <td>96.1189663579</td>
+      <td>10255</td>
       <td>4.0000000000</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>88.0203908241</td>
-      <td>4708</td>
+      <td>87.0319634703</td>
+      <td>4380</td>
       <td>10010.0000000000</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>97.9405940594</td>
-      <td>2525</td>
+      <td>98.1132075472</td>
+      <td>2756</td>
       <td>2.0000000000</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>99.5426829268</td>
-      <td>1312</td>
+      <td>99.5024875622</td>
+      <td>1206</td>
       <td>5.0000000000</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>94.6273830156</td>
-      <td>1154</td>
+      <td>94.5825932504</td>
+      <td>1126</td>
       <td>0.0000000000</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>97.0629370629</td>
-      <td>715</td>
-      <td>10012.0000000000</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>76.9363166954</td>
-      <td>581</td>
+      <td>82.7225130890</td>
+      <td>764</td>
       <td>20014.0000000000</td>
     </tr>
     <tr>
+      <th>9</th>
+      <td>97.2752043597</td>
+      <td>734</td>
+      <td>10012.0000000000</td>
+    </tr>
+    <tr>
       <th>10</th>
-      <td>99.6261682243</td>
-      <td>535</td>
+      <td>99.3920972644</td>
+      <td>329</td>
       <td>10.0000000000</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>67.7536231884</td>
-      <td>276</td>
+      <td>68.2481751825</td>
+      <td>274</td>
       <td>10015.0000000000</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>95.6043956044</td>
-      <td>273</td>
+      <td>95.3781512605</td>
+      <td>238</td>
       <td>9.0000000000</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>56.8421052632</td>
-      <td>190</td>
+      <td>59.1836734694</td>
+      <td>196</td>
       <td>20011.0000000000</td>
     </tr>
     <tr>
       <th>14</th>
       <td>100.0000000000</td>
-      <td>100</td>
+      <td>133</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>42.8571428571</td>
-      <td>7</td>
+      <td>16.6666666667</td>
+      <td>6</td>
       <td>20013.0000000000</td>
     </tr>
   </tbody>
@@ -3208,16 +3018,16 @@ dtype: float64
   <tbody>
     <tr>
       <th>0</th>
-      <td>-1</td>
       <td>1</td>
-      <td>2574</td>
+      <td>1</td>
+      <td>6763</td>
       <td>0.1218802214</td>
     </tr>
     <tr>
       <th>1</th>
+      <td>-1</td>
       <td>1</td>
-      <td>1</td>
-      <td>6763</td>
+      <td>2574</td>
       <td>0.1218802214</td>
     </tr>
     <tr>
@@ -3250,16 +3060,16 @@ dtype: float64
     </tr>
     <tr>
       <th>6</th>
-      <td>-1</td>
+      <td>1</td>
       <td>4</td>
-      <td>1345</td>
+      <td>3245</td>
       <td>0.3481359649</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>1</td>
+      <td>-1</td>
       <td>4</td>
-      <td>3245</td>
+      <td>1345</td>
       <td>0.3481359649</td>
     </tr>
     <tr>
@@ -3278,44 +3088,44 @@ dtype: float64
     </tr>
     <tr>
       <th>10</th>
-      <td>-1</td>
-      <td>6</td>
-      <td>1067</td>
-      <td>0.4456584169</td>
-    </tr>
-    <tr>
-      <th>11</th>
       <td>1</td>
       <td>6</td>
       <td>2460</td>
       <td>0.4456584169</td>
     </tr>
     <tr>
-      <th>12</th>
+      <th>11</th>
       <td>-1</td>
-      <td>7</td>
-      <td>977</td>
-      <td>0.4873120301</td>
+      <td>6</td>
+      <td>1067</td>
+      <td>0.4456584169</td>
     </tr>
     <tr>
-      <th>13</th>
+      <th>12</th>
       <td>1</td>
       <td>7</td>
       <td>2214</td>
       <td>0.4873120301</td>
     </tr>
     <tr>
+      <th>13</th>
+      <td>-1</td>
+      <td>7</td>
+      <td>977</td>
+      <td>0.4873120301</td>
+    </tr>
+    <tr>
       <th>14</th>
-      <td>1</td>
+      <td>-1</td>
       <td>8</td>
-      <td>1827</td>
+      <td>842</td>
       <td>0.5221517335</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>-1</td>
+      <td>1</td>
       <td>8</td>
-      <td>842</td>
+      <td>1827</td>
       <td>0.5221517335</td>
     </tr>
     <tr>
@@ -3382,7 +3192,7 @@ memory usage: 9.4 KB
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;复购周期&#39;, ylabel=&#39;复购用户数&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/6bc7cedca9ae2608b926ed30fa36e79ceee0f960b5269214e12dda4968ff47f4.png" src="_images/6bc7cedca9ae2608b926ed30fa36e79ceee0f960b5269214e12dda4968ff47f4.png" />
+<img alt="_images/6c1a5d866a48babae2ef0dfaba8f5f1be0ef6eb9de4bd41a35970676eb13c359.png" src="_images/6c1a5d866a48babae2ef0dfaba8f5f1be0ef6eb9de4bd41a35970676eb13c359.png" />
 </div>
 </div>
 </section>
@@ -3439,38 +3249,38 @@ memory usage: 9.4 KB
   <tbody>
     <tr>
       <th>0</th>
-      <td>ae3acfae4cc976ba88bf9db7f682b906</td>
-      <td>0</td>
-      <td>780</td>
-      <td>33.9300000000</td>
+      <td>44782be9c360d5f806d1d60faa3f0b3a</td>
+      <td>2</td>
+      <td>125</td>
+      <td>34.3600000000</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>02efb32eec7824aa6189f34d54dac24e</td>
-      <td>3</td>
-      <td>80</td>
-      <td>24.0600000000</td>
+      <td>495066eb5297c98d87368b9f7b3ccfb5</td>
+      <td>0</td>
+      <td>132</td>
+      <td>18.6600000000</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>519807db27e70e7b15898b226e09096f</td>
-      <td>3</td>
-      <td>139</td>
-      <td>11.3400000000</td>
+      <td>74cdfb1ef06e8c31831df411887b7293</td>
+      <td>0</td>
+      <td>633</td>
+      <td>56.5000000000</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>6d8d8aaa3427a2b3b1c7914b9cdcbfa6</td>
-      <td>10</td>
-      <td>80</td>
-      <td>30.8100000000</td>
+      <td>5e5d960aff5d0254eff1dd6ca05613fb</td>
+      <td>1</td>
+      <td>156</td>
+      <td>32.2500000000</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>80d0acb89eaf4e20aa305b455e42cc07</td>
-      <td>48</td>
-      <td>119</td>
-      <td>25.7500000000</td>
+      <td>5e44f2eb9b56827200dcfca21040ea8c</td>
+      <td>0</td>
+      <td>41</td>
+      <td>71.7500000000</td>
     </tr>
     <tr>
       <th>...</th>
@@ -3481,38 +3291,38 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>47203</th>
-      <td>aaeda10eb9f9a49741482ecf8b362b81</td>
-      <td>35</td>
+      <td>6a264405a916a4a95698ab78d34a19f2</td>
+      <td>13</td>
       <td>1</td>
-      <td>64.3000000000</td>
+      <td>14.9000000000</td>
     </tr>
     <tr>
       <th>47204</th>
-      <td>310ffc5b6b05838bf14dfb14e1b0c727</td>
-      <td>127</td>
+      <td>c8dcf989f71da0085a188d5ecca9a5a2</td>
+      <td>86</td>
       <td>1</td>
-      <td>28.0000000000</td>
+      <td>69.9000000000</td>
     </tr>
     <tr>
       <th>47205</th>
-      <td>a4874fc21452419e5d6306aca02ffbc8</td>
-      <td>61</td>
+      <td>b8b96d2d86577d2a9624114525df6be5</td>
+      <td>151</td>
       <td>1</td>
-      <td>11.6000000000</td>
+      <td>26.8000000000</td>
     </tr>
     <tr>
       <th>47206</th>
-      <td>d9d336fc7fac423ab8b3758636064df8</td>
-      <td>111</td>
+      <td>adbd4f9aec407eff36bccf77b5ad9e07</td>
+      <td>44</td>
       <td>1</td>
-      <td>34.0000000000</td>
+      <td>241.0000000000</td>
     </tr>
     <tr>
       <th>47207</th>
-      <td>326767d5f79b0822cdffd6dae54c0ff7</td>
-      <td>73</td>
+      <td>5031a5f6309bce260a57a8526a9cf510</td>
+      <td>13</td>
       <td>1</td>
-      <td>74.0000000000</td>
+      <td>21.4800000000</td>
     </tr>
   </tbody>
 </table>
@@ -3560,13 +3370,13 @@ memory usage: 9.4 KB
       <th>mean</th>
       <td>36.2260210134</td>
       <td>32.6964921200</td>
-      <td>51.3548070242</td>
+      <td>51.3548080834</td>
     </tr>
     <tr>
       <th>std</th>
       <td>45.5094999753</td>
       <td>58.0147054336</td>
-      <td>69.9930673292</td>
+      <td>69.9930663422</td>
     </tr>
     <tr>
       <th>min</th>
@@ -3630,7 +3440,7 @@ memory usage: 9.4 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/e2c1ba1ccc324cc09756b5fb3efe06665d7a2194a3bd2d65c53ff2f5b011f4ea.png" src="_images/e2c1ba1ccc324cc09756b5fb3efe06665d7a2194a3bd2d65c53ff2f5b011f4ea.png" />
+<img alt="_images/5c04229f164f867c48ce6abc9981b6c16bac6917b4509dc4fcbcb6a9af61c2cb.png" src="_images/5c04229f164f867c48ce6abc9981b6c16bac6917b4509dc4fcbcb6a9af61c2cb.png" />
 </div>
 </div>
 </section>
@@ -3646,7 +3456,7 @@ memory usage: 9.4 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/99142b6f5bc9c8064d3a5362331ee2a3c4257cfd65856285bad146f4bbdd1dcd.png" src="_images/99142b6f5bc9c8064d3a5362331ee2a3c4257cfd65856285bad146f4bbdd1dcd.png" />
+<img alt="_images/872b3c0b2aaeb363614aad01434a4c990351afbda6591627e97c964f6662649d.png" src="_images/872b3c0b2aaeb363614aad01434a4c990351afbda6591627e97c964f6662649d.png" />
 </div>
 </div>
 </section>
@@ -3672,7 +3482,7 @@ memory usage: 9.4 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/2edfd081beda0a8a93c0c34d1cdff92df8031bde5c06bac08cfcf2ea3e879419.png" src="_images/2edfd081beda0a8a93c0c34d1cdff92df8031bde5c06bac08cfcf2ea3e879419.png" />
+<img alt="_images/6b2e9c7d4a8825d93ae3a4538906333550af9fbdbdb4b829d227e8208d6d0979.png" src="_images/6b2e9c7d4a8825d93ae3a4538906333550af9fbdbdb4b829d227e8208d6d0979.png" />
 </div>
 </div>
 <p>📌 解释：</p>
@@ -3699,7 +3509,7 @@ memory usage: 9.4 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/f3bc794dd7564493ab0660e6965849a8f9adb87ba8d130356fc35b04fc96bd24.png" src="_images/f3bc794dd7564493ab0660e6965849a8f9adb87ba8d130356fc35b04fc96bd24.png" />
+<img alt="_images/f322a0d2752e93370ed53599d8e91732b1dc924ccdcc33ef32a2b856c3c68b44.png" src="_images/f322a0d2752e93370ed53599d8e91732b1dc924ccdcc33ef32a2b856c3c68b44.png" />
 </div>
 </div>
 </section>
@@ -3729,7 +3539,7 @@ memory usage: 9.4 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/c75c08178aa2abe480c9be3119c7fc24fc51e103f7a275aa7965562d5c3a1acb.png" src="_images/c75c08178aa2abe480c9be3119c7fc24fc51e103f7a275aa7965562d5c3a1acb.png" />
+<img alt="_images/d74c34d1f9deba5466a01fcf3f8806246ada7bd07922d21004423c871c7752ec.png" src="_images/d74c34d1f9deba5466a01fcf3f8806246ada7bd07922d21004423c871c7752ec.png" />
 </div>
 </div>
 </section>
@@ -3789,18 +3599,18 @@ memory usage: 9.4 KB
   <tbody>
     <tr>
       <th>0</th>
-      <td>M</td>
-      <td>65.6200000000</td>
-    </tr>
-    <tr>
-      <th>1</th>
       <td>F</td>
       <td>48.0000000000</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>1</th>
       <td>R</td>
       <td>2.0000000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>M</td>
+      <td>65.6200000000</td>
     </tr>
   </tbody>
 </table>
@@ -3809,7 +3619,8 @@ memory usage: 9.4 KB
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">select 用户ID,</span>
+<span class="s2">select </span>
+<span class="s2">coalesce(RFM.用户ID, tmp.用户ID) as 用户ID,</span>
 <span class="s2">case when R&lt;=5 and F&gt;=28 and M&gt;=76.86 then &#39;重要价值客户&#39;</span>
 <span class="s2">when R&lt;=5 and F&gt;=28 and M&lt;76.86 then &#39;一般价值客户&#39;</span>
 <span class="s2">when R&lt;=5 and F&lt;28 and M&gt;=76.86 then &#39;重要发展客户&#39;</span>
@@ -3818,8 +3629,10 @@ memory usage: 9.4 KB
 <span class="s2">when R&gt;5 and F&gt;=28 and M&lt;76.86 then &#39;一般唤回客户&#39;</span>
 <span class="s2">when R&gt;5 and F&lt;28 and M&gt;=76.86 then &#39;重要挽留客户&#39;</span>
 <span class="s2">when R&gt;5 and F&lt;28 and M&lt;76.86 then &#39;一般挽留客户&#39;</span>
+<span class="s2">when R is null then &#39;不存在消费记录的用户&#39;</span>
 <span class="s2">end as &#39;用户价值族群&#39;</span>
 <span class="s2">from RFM</span>
+<span class="s2">FULL join (select distinct User_id 用户ID from user_coupon_receive) tmp on RFM.用户ID = tmp.用户ID</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="n">user_RFM</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
 
@@ -3853,28 +3666,28 @@ memory usage: 9.4 KB
   <tbody>
     <tr>
       <th>0</th>
-      <td>ae3acfae4cc976ba88bf9db7f682b906</td>
-      <td>一般价值客户</td>
+      <td>0e22c035960968d76081373133fdf55e</td>
+      <td>一般挽留客户</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>02efb32eec7824aa6189f34d54dac24e</td>
+      <td>78a95eb83301f5f727f6141c8bb798a2</td>
       <td>一般价值客户</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>519807db27e70e7b15898b226e09096f</td>
-      <td>一般价值客户</td>
+      <td>6121622ad0d46fd2ea8d11fdbe761686</td>
+      <td>重要挽留客户</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>6d8d8aaa3427a2b3b1c7914b9cdcbfa6</td>
-      <td>一般唤回客户</td>
+      <td>e3465919afd0c4e52c0db3506e0f0e36</td>
+      <td>一般挽留客户</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>80d0acb89eaf4e20aa305b455e42cc07</td>
-      <td>一般唤回客户</td>
+      <td>e3c0372a7c967f12b721b2c3213b98db</td>
+      <td>一般发展客户</td>
     </tr>
     <tr>
       <th>...</th>
@@ -3882,33 +3695,33 @@ memory usage: 9.4 KB
       <td>...</td>
     </tr>
     <tr>
-      <th>47203</th>
-      <td>aaeda10eb9f9a49741482ecf8b362b81</td>
+      <th>49668</th>
+      <td>edae8f646ef36f3146736735af306d6d</td>
       <td>一般挽留客户</td>
     </tr>
     <tr>
-      <th>47204</th>
-      <td>310ffc5b6b05838bf14dfb14e1b0c727</td>
+      <th>49669</th>
+      <td>8d2a60a7283d2462ec8e3c545af66d3a</td>
       <td>一般挽留客户</td>
     </tr>
     <tr>
-      <th>47205</th>
-      <td>a4874fc21452419e5d6306aca02ffbc8</td>
-      <td>一般挽留客户</td>
+      <th>49670</th>
+      <td>27ede92657665505db524f15cf6bdc3b</td>
+      <td>重要挽留客户</td>
     </tr>
     <tr>
-      <th>47206</th>
-      <td>d9d336fc7fac423ab8b3758636064df8</td>
-      <td>一般挽留客户</td>
+      <th>49671</th>
+      <td>adbd4f9aec407eff36bccf77b5ad9e07</td>
+      <td>重要挽留客户</td>
     </tr>
     <tr>
-      <th>47207</th>
-      <td>326767d5f79b0822cdffd6dae54c0ff7</td>
+      <th>49672</th>
+      <td>5031a5f6309bce260a57a8526a9cf510</td>
       <td>一般挽留客户</td>
     </tr>
   </tbody>
 </table>
-<p>47208 rows × 2 columns</p>
+<p>49673 rows × 2 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -3953,49 +3766,55 @@ memory usage: 9.4 KB
       <th>0</th>
       <td>一般价值客户</td>
       <td>8772</td>
-      <td>18.58%</td>
+      <td>17.66%</td>
     </tr>
     <tr>
       <th>1</th>
       <td>一般发展客户</td>
       <td>4740</td>
-      <td>10.04%</td>
+      <td>9.54%</td>
     </tr>
     <tr>
       <th>2</th>
       <td>一般唤回客户</td>
       <td>4521</td>
-      <td>9.58%</td>
+      <td>9.1%</td>
     </tr>
     <tr>
       <th>3</th>
       <td>一般挽留客户</td>
       <td>21870</td>
-      <td>46.33%</td>
+      <td>44.03%</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>重要价值客户</td>
-      <td>618</td>
-      <td>1.31%</td>
+      <td>不存在消费记录的用户</td>
+      <td>2465</td>
+      <td>4.96%</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>重要发展客户</td>
-      <td>834</td>
-      <td>1.77%</td>
+      <td>重要价值客户</td>
+      <td>618</td>
+      <td>1.24%</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>重要唤回客户</td>
-      <td>345</td>
-      <td>0.73%</td>
+      <td>重要发展客户</td>
+      <td>834</td>
+      <td>1.68%</td>
     </tr>
     <tr>
       <th>7</th>
+      <td>重要唤回客户</td>
+      <td>345</td>
+      <td>0.69%</td>
+    </tr>
+    <tr>
+      <th>8</th>
       <td>重要挽留客户</td>
       <td>5508</td>
-      <td>11.67%</td>
+      <td>11.09%</td>
     </tr>
   </tbody>
 </table>
@@ -4004,781 +3823,43 @@ memory usage: 9.4 KB
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id32">
-<h1>风控<a class="headerlink" href="#id32" title="Link to this heading">#</a></h1>
+<h1>RFM + 用户转化分析<a class="headerlink" href="#id32" title="Link to this heading">#</a></h1>
+<section id="id33">
+<h2>不同价值族群的转化漏斗<a class="headerlink" href="#id33" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;select count(distinct Coupon_id), Coupon_status from user_coupon_receive</span>
-<span class="s2">       group by 2</span>
-<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+
+<span class="s1">select</span>
+<span class="s1">    count(distinct User_id) as getcoupons_users</span>
+<span class="s1">    ,用户价值族群</span>
+<span class="s1">from user_coupon_receive</span>
+<span class="s1">left join user_RFM on User_id = 用户ID</span>
+<span class="s1">where Coupon_id is not null</span>
+<span class="s1">group by 2</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>┌───────────────────────────┬───────────────┐
-│ count(DISTINCT Coupon_id) │ Coupon_status │
-│           int64           │    double     │
-├───────────────────────────┼───────────────┤
-│                    202596 │           1.0 │
-│                   1812142 │           3.0 │
-│                    114650 │           2.0 │
-│                     49998 │          NULL │
-└───────────────────────────┴───────────────┘
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>┌──────────────────┬──────────────────────┐
+│ getcoupons_users │     用户价值族群     │
+│      int64       │       varchar        │
+├──────────────────┼──────────────────────┤
+│             4649 │ 一般发展客户         │
+│             4518 │ 一般唤回客户         │
+│             5360 │ 重要挽留客户         │
+│             2464 │ 不存在消费记录的用户 │
+│              824 │ 重要发展客户         │
+│            21211 │ 一般挽留客户         │
+│              345 │ 重要唤回客户         │
+│             8771 │ 一般价值客户         │
+│              618 │ 重要价值客户         │
+└──────────────────┴──────────────────────┘
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;select count(*) as cnt,Coupon_id, Coupon_type, Reduce_amount from order_detail</span>
-<span class="s2">       WHERE Coupon_id IS NOT NULL</span>
-<span class="s2">       group by 2, 3, 4</span>
-<span class="s2">       order by cnt DESC</span>
-<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>┌───────┬──────────────────────────────────┬─────────────┬───────────────┐
-│  cnt  │            Coupon_id             │ Coupon_type │ Reduce_amount │
-│ int64 │             varchar              │   double    │    double     │
-├───────┼──────────────────────────────────┼─────────────┼───────────────┤
-│   116 │ c58124d1e044322fc72ef7c37b56de08 │         3.0 │           0.0 │
-│   104 │ ab100513112be8af5fb5a12412eef0ac │         6.0 │           0.0 │
-│    93 │ 358987413a0a4c336aa070a9293d2605 │         6.0 │           0.0 │
-│    75 │ 7c9f5b11a61eea693cc297aa2fd8d27c │         3.0 │           0.0 │
-│    74 │ 61774a449995d824696560105e8c641e │         6.0 │           0.0 │
-│    72 │ 6c0c496371a7d51bb6597ecbb2143a84 │     20014.0 │           2.5 │
-│    69 │ 051954b0c84fae4029debb124b99357c │        NULL │           1.0 │
-│    64 │ 3719ffc2495735804c5008ff6da1ba13 │         3.0 │           0.0 │
-│    60 │ a981585949018fbc31ba28e26416a50f │         6.0 │           0.0 │
-│    56 │ 1835285df267e31cf071a54f2a3b7143 │         6.0 │           0.0 │
-│     · │                ·                 │          ·  │            ·  │
-│     · │                ·                 │          ·  │            ·  │
-│     · │                ·                 │          ·  │            ·  │
-│     1 │ 8d408a392385826d73b5ff3b46bfc672 │         1.0 │           3.0 │
-│     1 │ 9f10ae2cc2704ba041eb7915d89c74d3 │         1.0 │           2.0 │
-│     1 │ 1b603509ca84598d3bce8d79a562333f │         1.0 │           5.0 │
-│     1 │ b6dea24b9350ddb28ab29828a100db27 │         1.0 │           3.0 │
-│     1 │ ecfb13822f34eaa4ee880d64d0cec376 │         4.0 │           0.0 │
-│     1 │ b967de168c249339beb13670251bf811 │         6.0 │           0.0 │
-│     1 │ 6d1c0114b5e697fbc214f806c20b29e4 │         1.0 │           3.0 │
-│     1 │ b76d0c29f090b6fe186a94aed5bd9937 │         1.0 │           1.0 │
-│     1 │ e509a96c14b9be118e55650082eb32b1 │         1.0 │           7.0 │
-│     1 │ a9625cdc98baaa8bb8a3fc396b7a3145 │         1.0 │           0.0 │
-├───────┴──────────────────────────────────┴─────────────┴───────────────┤
-│ ? rows (&gt;9999 rows, 20 shown)                                4 columns │
-└────────────────────────────────────────────────────────────────────────┘
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">with t1 AS</span>
-<span class="s2">(</span>
-<span class="s2">    select count(*) as 领券总数,User_id AS 用户ID from user_coupon_receive</span>
-<span class="s2">           WHERE Coupon_id IS NOT NULL</span>
-<span class="s2">           group by 2</span>
-<span class="s2">)</span>
-<span class="s2">SELECT * FROM t1 LEFT JOIN user_RFM USING(用户ID)</span>
-<span class="s2">order by 领券总数 DESC</span>
-<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>领券总数</th>
-      <th>用户ID</th>
-      <th>用户价值族群</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1071</td>
-      <td>8ebe6816c6b51ad2c3afed2812a053b5</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1065</td>
-      <td>b083832263c1b4225990438b03056786</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>970</td>
-      <td>bc326638e3ef950e4377b0113afeab3c</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>771</td>
-      <td>eef2ef1a0afd2c7b33e099fa1e60585b</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>767</td>
-      <td>e963a661c64e7a201145c508c4917f6d</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>48755</th>
-      <td>1</td>
-      <td>70c12ed6fddd6ad586a75e88df7e7842</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>48756</th>
-      <td>1</td>
-      <td>480d6f2c4117c8935624fbcfd4a89833</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>48757</th>
-      <td>1</td>
-      <td>f731c5d728c0ec0292369e62202b9fe6</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>48758</th>
-      <td>1</td>
-      <td>4a1f0495a19c8e9a7072919a485e08c1</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>48759</th>
-      <td>1</td>
-      <td>fab8fe0bd13b64165feef618abcdcc7b</td>
-      <td>None</td>
-    </tr>
-  </tbody>
-</table>
-<p>48760 rows × 3 columns</p>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">with t1 AS</span>
-<span class="s2">(</span>
-<span class="s2">    select count(*) as 领券总数,User_id AS 用户ID, Receive_date from user_coupon_receive</span>
-<span class="s2">           WHERE Coupon_id IS NOT NULL</span>
-<span class="s2">           group by 2, 3</span>
-<span class="s2">)</span>
-<span class="s2">SELECT * FROM t1 LEFT JOIN user_RFM USING(用户ID)</span>
-<span class="s2">WHERE Receive_date IS NOT NULL</span>
-<span class="s2">order by 领券总数 DESC</span>
-<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>领券总数</th>
-      <th>用户ID</th>
-      <th>Receive_date</th>
-      <th>用户价值族群</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>50</td>
-      <td>135b607fa436226daf62b1cbf777c917</td>
-      <td>2023-01-16</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>50</td>
-      <td>64f7f49aa3a6f2d3bdf579dc20f5ee7b</td>
-      <td>2023-05-19</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>45</td>
-      <td>135b607fa436226daf62b1cbf777c917</td>
-      <td>2023-05-27</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>42</td>
-      <td>02b1727ae62d6484c3bce3b666242ead</td>
-      <td>2023-03-01</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>40</td>
-      <td>3c9e89409f0884ec9e905c40323230a4</td>
-      <td>2023-04-15</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>37</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-11</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>36</td>
-      <td>fec7766b5ea29350082a73e014f22358</td>
-      <td>2023-01-20</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>34</td>
-      <td>fec7766b5ea29350082a73e014f22358</td>
-      <td>2023-03-18</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>34</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-15</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>34</td>
-      <td>da4a52ebccf7f143e38876c966b1ff38</td>
-      <td>2023-05-12</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>31</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-12</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>30</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-16</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>30</td>
-      <td>8d7c90fa30a96097c5737ecafe4e57db</td>
-      <td>2023-03-25</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>30</td>
-      <td>1299c85e6d75198f5ca20a91baae51b4</td>
-      <td>2023-03-14</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>30</td>
-      <td>7ecc2f8801ba553a8f9bd7dddd451104</td>
-      <td>2023-03-02</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>30</td>
-      <td>ff64a6c6c5790b859c1e97249f36c0ba</td>
-      <td>2023-02-25</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>29</td>
-      <td>9672b53f7f3eb658c50707c4956a0e2f</td>
-      <td>2023-02-01</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>29</td>
-      <td>a2fde3de810b2a1f6e2adb9f6f1c0e23</td>
-      <td>2023-01-01</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>29</td>
-      <td>7ecc2f8801ba553a8f9bd7dddd451104</td>
-      <td>2023-04-15</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>28</td>
-      <td>25820554dbcb7f9ccecf8a2a8d37dc6b</td>
-      <td>2023-06-27</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>28</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-17</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>27</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-19</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>26</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-14</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>26</td>
-      <td>bd089a2eb4fe30f3c645ec0e0c058631</td>
-      <td>2023-03-18</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>26</td>
-      <td>9fa9ac51e71c8c059e04f274d5bd6efc</td>
-      <td>2023-04-11</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>25</td>
-      <td>1299c85e6d75198f5ca20a91baae51b4</td>
-      <td>2023-01-31</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>25</td>
-      <td>e683073f2f24ab8e307fbc3138416393</td>
-      <td>2023-02-27</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>24</td>
-      <td>da4a52ebccf7f143e38876c966b1ff38</td>
-      <td>2023-02-17</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>24</td>
-      <td>a256356289a2cf4edd3b0324baed4af5</td>
-      <td>2023-05-28</td>
-      <td>重要唤回客户</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>24</td>
-      <td>a132a4442bb94ceeee4fb152cce9114a</td>
-      <td>2023-04-29</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>24</td>
-      <td>5d22212c8e0f5a9d037a889bf5736920</td>
-      <td>2023-05-14</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>24</td>
-      <td>386ae42393c05364eb5ce86c62f6453e</td>
-      <td>2023-02-12</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>23</td>
-      <td>8ac16d0d02600988ae6c33ea5f4b99cd</td>
-      <td>2023-05-18</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>23</td>
-      <td>1b4b18d638b91be57261530cced8310c</td>
-      <td>2023-01-07</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>23</td>
-      <td>1299c85e6d75198f5ca20a91baae51b4</td>
-      <td>2023-03-09</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>22</td>
-      <td>6b182b745c1de380287c392e2c18e59a</td>
-      <td>2023-01-13</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>22</td>
-      <td>c7d5e76428b24a9f05498ec8497e95c4</td>
-      <td>2023-04-14</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>22</td>
-      <td>1cf1420b93c1057f0bf545fb69a3dd2e</td>
-      <td>2023-06-02</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>22</td>
-      <td>6e0dd657a906a6e72c3dab7993cc711a</td>
-      <td>2023-04-01</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>22</td>
-      <td>950cdda64940171d81ed541e87d6cc6b</td>
-      <td>2023-03-29</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>21</td>
-      <td>203059efeae080497a881e1d5d88d378</td>
-      <td>2023-01-07</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>21</td>
-      <td>ff110421440d8fcd5a53a784068c7610</td>
-      <td>2023-06-18</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>21</td>
-      <td>c5e87601fa9bcb3bf0b11895f743b0eb</td>
-      <td>2023-01-28</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>21</td>
-      <td>0c1a17aed80a169a0c0d3bb80b17fd2e</td>
-      <td>2023-03-03</td>
-      <td>一般价值客户</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>20</td>
-      <td>fec7766b5ea29350082a73e014f22358</td>
-      <td>2023-06-15</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>20</td>
-      <td>0f40df8f3d568b343d155f561e3ed359</td>
-      <td>2023-01-11</td>
-      <td>重要价值客户</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>20</td>
-      <td>fec7766b5ea29350082a73e014f22358</td>
-      <td>2023-02-06</td>
-      <td>一般发展客户</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>20</td>
-      <td>1299c85e6d75198f5ca20a91baae51b4</td>
-      <td>2023-02-19</td>
-      <td>一般挽留客户</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>20</td>
-      <td>f014d8b4e73de415465ba0eefdaa7793</td>
-      <td>2023-04-09</td>
-      <td>一般唤回客户</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>20</td>
-      <td>d3b489224bd01e3c0eaf131b48500602</td>
-      <td>2023-03-01</td>
-      <td>一般挽留客户</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;select sum(Reduce_amount) as 总优惠, sum(Actual_pay) as 总支出, User_id  from order_detail</span>
-<span class="s2">       WHERE Coupon_id IS NOT NULL </span>
-<span class="s2">       AND User_id in (&#39;8ebe6816c6b51ad2c3afed2812a053b5&#39;, &#39;b083832263c1b4225990438b03056786&#39;, &#39;bc326638e3ef950e4377b0113afeab3c&#39;)</span>
-<span class="s2">       group by 3</span>
-<span class="s2">       -- order by cnt DESC</span>
-<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>总优惠</th>
-      <th>总支出</th>
-      <th>User_id</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>615.5000000000</td>
-      <td>7269.9300000000</td>
-      <td>8ebe6816c6b51ad2c3afed2812a053b5</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>8.0000000000</td>
-      <td>23.8000000000</td>
-      <td>b083832263c1b4225990438b03056786</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>458.0000000000</td>
-      <td>5513.2000000000</td>
-      <td>bc326638e3ef950e4377b0113afeab3c</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;select *  from order_detail</span>
-<span class="s2">       WHERE User_id in (&#39;b083832263c1b4225990438b03056786&#39;)</span>
-<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>User_id</th>
-      <th>Shop_id</th>
-      <th>Order_id</th>
-      <th>Coupon_id</th>
-      <th>Coupon_type</th>
-      <th>Biz_code</th>
-      <th>Pay_date</th>
-      <th>Actual_pay</th>
-      <th>Reduce_amount</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>b083832263c1b4225990438b03056786</td>
-      <td>b96db70b506332a7a4f44c156cb4ca1b</td>
-      <td>56d7a4c731ab3923c4ff3007b21fc662</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>D</td>
-      <td>2023-06-16</td>
-      <td>26.9000000000</td>
-      <td>0.0000000000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>b083832263c1b4225990438b03056786</td>
-      <td>b96db70b506332a7a4f44c156cb4ca1b</td>
-      <td>ea2da07a9a424042b9594caad4918f90</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>D</td>
-      <td>2023-06-13</td>
-      <td>21.9000000000</td>
-      <td>0.0000000000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>b083832263c1b4225990438b03056786</td>
-      <td>74ffd5ce40ba21c957ddb90b0e6f3f1a</td>
-      <td>c5a3728a57b6c6261a8446b1df2e94f1</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>D</td>
-      <td>2023-06-27</td>
-      <td>24.2800000000</td>
-      <td>0.0000000000</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>b083832263c1b4225990438b03056786</td>
-      <td>6791fffb08d1b564733985c881280191</td>
-      <td>020f2f6488f87d4039e5d9fb97fc0533</td>
-      <td>df8e3a90599dd80c9d69d5533d472560</td>
-      <td>1.0000000000</td>
-      <td>D</td>
-      <td>2023-04-19</td>
-      <td>23.8000000000</td>
-      <td>8.0000000000</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>b083832263c1b4225990438b03056786</td>
-      <td>6791fffb08d1b564733985c881280191</td>
-      <td>020f2f6488f87d4039e5d9fb97fc0533</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>D</td>
-      <td>2023-04-19</td>
-      <td>23.8000000000</td>
-      <td>0.0000000000</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cheats_user</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">select User_id, Receive_date::Date AS Receive_date from user_coupon_receive</span>
-<span class="s2">WHERE User_id in (&#39;b083832263c1b4225990438b03056786&#39;)</span>
-<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 统计每个 Receive_date 的出现次数</span>
-<span class="n">date_counts</span> <span class="o">=</span> <span class="n">cheats_user</span><span class="p">[</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">date_counts</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">,</span> <span class="s1">&#39;Count&#39;</span><span class="p">]</span>
-
-<span class="c1"># 创建一个交互式散点图</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">date_counts</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> 
-                 <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">:</span> <span class="s1">&#39;Receive Date&#39;</span><span class="p">,</span> <span class="s1">&#39;Count&#39;</span><span class="p">:</span> <span class="s1">&#39;Count&#39;</span><span class="p">},</span>
-                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;用户b083832263c1b4225990438b03056786的领券记录&quot;</span><span class="p">)</span>
-
-<span class="c1"># 显示点的坐标</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">),</span>
-                  <span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;Date: %</span><span class="si">{x}</span><span class="s1">&lt;br&gt;Count: %</span><span class="si">{y}</span><span class="s1">&lt;extra&gt;&lt;/extra&gt;&#39;</span><span class="p">)</span>
-
-<span class="c1"># 显示图表</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-</div>
-</div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id33">
-<h1>RFM + 用户转化分析<a class="headerlink" href="#id33" title="Link to this heading">#</a></h1>
-<section id="id34">
-<h2>不同价值族群的转化漏斗<a class="headerlink" href="#id34" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
@@ -4838,20 +3919,20 @@ memory usage: 9.4 KB
 <span class="s2">    t1.用户价值族群,</span>
 <span class="s2">    t1.all_users AS 全体用户,</span>
 <span class="s2">    getcoupons_users AS 领券用户,</span>
-<span class="s2">    首次用券核销用户,</span>
-<span class="s2">    second_user AS 用券后复购用户</span>
+<span class="s2">    coalesce(首次用券核销用户, 0) AS 首次用券核销用户 ,</span>
+<span class="s2">    coalesce(second_user, 0) AS 用券后复购用户</span>
 <span class="s2">    </span>
 <span class="s2">FROM </span>
 <span class="s2">    t1</span>
-<span class="s2">JOIN </span>
+<span class="s2">LEFT JOIN </span>
 <span class="s2">    t2</span>
 <span class="s2">ON t1.用户价值族群 = t2.用户价值族群</span>
-<span class="s2">JOIN </span>
+<span class="s2">LEFT JOIN </span>
 <span class="s2">    (SELECT COUNT(DISTINCT User_id) AS 首次用券核销用户, 用户价值族群 FROM a1 GROUP BY 用户价值族群) AS a1_data</span>
 <span class="s2">ON t1.用户价值族群 = a1_data.用户价值族群</span>
-<span class="s2">JOIN a2</span>
+<span class="s2">LEFT JOIN a2</span>
 <span class="s2">ON t1.用户价值族群 = a2.用户价值族群</span>
-
+<span class="s2">WHERE t1.用户价值族群	is not null</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
@@ -4951,6 +4032,14 @@ memory usage: 9.4 KB
       <td>339</td>
       <td>324</td>
     </tr>
+    <tr>
+      <th>8</th>
+      <td>不存在消费记录的用户</td>
+      <td>2465</td>
+      <td>2464</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
   </tbody>
 </table>
 </div></div></div>
@@ -5029,8 +4118,8 @@ memory usage: 9.4 KB
 <li><p>消费水平和消费券的优惠差距过大（分差）</p></li>
 </ol>
 </section>
-<section id="id35">
-<h2>不同用户价值族群的消费分布<a class="headerlink" href="#id35" title="Link to this heading">#</a></h2>
+<section id="id34">
+<h2>不同用户价值族群的消费分布<a class="headerlink" href="#id34" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wide_df</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -5095,7 +4184,7 @@ memory usage: 9.4 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/b17882aa52cd3fe231870188be316b921a41bf7bab898a7c4f1d6c0889da74aa.png" src="_images/b17882aa52cd3fe231870188be316b921a41bf7bab898a7c4f1d6c0889da74aa.png" />
+<img alt="_images/d2687d16c7cee5808a4fab7ae9b30bb3b2d189ed60e9ab44fce8926f378365e2.png" src="_images/d2687d16c7cee5808a4fab7ae9b30bb3b2d189ed60e9ab44fce8926f378365e2.png" />
 </div>
 </div>
 <p>结论:</p>
@@ -5165,38 +4254,6 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>2</th>
-      <td>重要挽留客户</td>
-      <td>9.0000000000</td>
-      <td>1</td>
-      <td>1.0000000000</td>
-      <td>11.2026976396</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>一般发展客户</td>
-      <td>11.0000000000</td>
-      <td>1</td>
-      <td>1.0000000000</td>
-      <td>5.0985723997</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>一般发展客户</td>
-      <td>0.0000000000</td>
-      <td>14</td>
-      <td>1.0000000000</td>
-      <td>0.7675814532</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>重要发展客户</td>
-      <td>20013.0000000000</td>
-      <td>1</td>
-      <td>1.0000000000</td>
-      <td>1.9000000000</td>
-    </tr>
-    <tr>
-      <th>6</th>
       <td>重要发展客户</td>
       <td>6.0000000000</td>
       <td>279</td>
@@ -5204,31 +4261,31 @@ memory usage: 9.4 KB
       <td>0.0039345325</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>重要唤回客户</td>
-      <td>11.0000000000</td>
-      <td>1</td>
-      <td>1.0000000000</td>
-      <td>2.4965672201</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>一般挽留客户</td>
-      <td>4.0000000000</td>
-      <td>455</td>
-      <td>1.0000000000</td>
-      <td>0.6873075865</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>重要发展客户</td>
+      <th>3</th>
+      <td>重要挽留客户</td>
       <td>9.0000000000</td>
       <td>1</td>
       <td>1.0000000000</td>
-      <td>8.1147040879</td>
+      <td>11.2026976396</td>
     </tr>
     <tr>
-      <th>10</th>
+      <th>4</th>
+      <td>重要发展客户</td>
+      <td>20013.0000000000</td>
+      <td>1</td>
+      <td>1.0000000000</td>
+      <td>1.9000000000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>一般发展客户</td>
+      <td>0.0000000000</td>
+      <td>14</td>
+      <td>1.0000000000</td>
+      <td>0.7675814532</td>
+    </tr>
+    <tr>
+      <th>6</th>
       <td>重要唤回客户</td>
       <td>20014.0000000000</td>
       <td>35</td>
@@ -5236,7 +4293,15 @@ memory usage: 9.4 KB
       <td>0.0564652739</td>
     </tr>
     <tr>
-      <th>11</th>
+      <th>7</th>
+      <td>重要发展客户</td>
+      <td>9.0000000000</td>
+      <td>1</td>
+      <td>1.0000000000</td>
+      <td>8.1147040879</td>
+    </tr>
+    <tr>
+      <th>8</th>
       <td>一般发展客户</td>
       <td>4.0000000000</td>
       <td>209</td>
@@ -5244,12 +4309,36 @@ memory usage: 9.4 KB
       <td>0.9800932592</td>
     </tr>
     <tr>
-      <th>12</th>
+      <th>9</th>
       <td>重要价值客户</td>
       <td>10015.0000000000</td>
       <td>1</td>
       <td>1.0000000000</td>
       <td>99.7142857143</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>一般发展客户</td>
+      <td>11.0000000000</td>
+      <td>1</td>
+      <td>1.0000000000</td>
+      <td>5.0985723997</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>一般挽留客户</td>
+      <td>4.0000000000</td>
+      <td>455</td>
+      <td>1.0000000000</td>
+      <td>0.6873075865</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>重要唤回客户</td>
+      <td>11.0000000000</td>
+      <td>1</td>
+      <td>1.0000000000</td>
+      <td>2.4965672201</td>
     </tr>
     <tr>
       <th>13</th>
@@ -5269,14 +4358,6 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>15</th>
-      <td>重要价值客户</td>
-      <td>9.0000000000</td>
-      <td>2</td>
-      <td>2.0000000000</td>
-      <td>9.5583787054</td>
-    </tr>
-    <tr>
-      <th>16</th>
       <td>重要唤回客户</td>
       <td>0.0000000000</td>
       <td>101</td>
@@ -5284,7 +4365,7 @@ memory usage: 9.4 KB
       <td>0.0553615594</td>
     </tr>
     <tr>
-      <th>17</th>
+      <th>16</th>
       <td>重要唤回客户</td>
       <td>20013.0000000000</td>
       <td>2</td>
@@ -5292,12 +4373,20 @@ memory usage: 9.4 KB
       <td>1.9000000000</td>
     </tr>
     <tr>
+      <th>17</th>
+      <td>重要价值客户</td>
+      <td>9.0000000000</td>
+      <td>2</td>
+      <td>2.0000000000</td>
+      <td>9.5583787054</td>
+    </tr>
+    <tr>
       <th>18</th>
-      <td>一般唤回客户</td>
-      <td>0.0000000000</td>
-      <td>90</td>
+      <td>重要价值客户</td>
+      <td>20014.0000000000</td>
+      <td>107</td>
       <td>3.0000000000</td>
-      <td>0.1607451480</td>
+      <td>0.0753504739</td>
     </tr>
     <tr>
       <th>19</th>
@@ -5309,11 +4398,11 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>20</th>
-      <td>重要价值客户</td>
-      <td>20014.0000000000</td>
-      <td>107</td>
+      <td>一般唤回客户</td>
+      <td>0.0000000000</td>
+      <td>90</td>
       <td>3.0000000000</td>
-      <td>0.0753504739</td>
+      <td>0.1607451480</td>
     </tr>
     <tr>
       <th>21</th>
@@ -5357,19 +4446,19 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>26</th>
+      <td>重要发展客户</td>
+      <td>4.0000000000</td>
+      <td>359</td>
+      <td>5.0000000000</td>
+      <td>2.1766331651</td>
+    </tr>
+    <tr>
+      <th>27</th>
       <td>一般价值客户</td>
       <td>11.0000000000</td>
       <td>5</td>
       <td>5.0000000000</td>
       <td>5.6787538466</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>重要价值客户</td>
-      <td>4.0000000000</td>
-      <td>1375</td>
-      <td>5.0000000000</td>
-      <td>0.1742538029</td>
     </tr>
     <tr>
       <th>28</th>
@@ -5381,11 +4470,11 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>29</th>
-      <td>重要发展客户</td>
+      <td>重要价值客户</td>
       <td>4.0000000000</td>
-      <td>359</td>
+      <td>1375</td>
       <td>5.0000000000</td>
-      <td>2.1766331651</td>
+      <td>0.1742538029</td>
     </tr>
     <tr>
       <th>30</th>
@@ -5437,11 +4526,11 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>36</th>
-      <td>一般唤回客户</td>
-      <td>10015.0000000000</td>
-      <td>11</td>
+      <td>重要挽留客户</td>
+      <td>20014.0000000000</td>
+      <td>199</td>
       <td>11.0000000000</td>
-      <td>99.7764227642</td>
+      <td>0.2989058502</td>
     </tr>
     <tr>
       <th>37</th>
@@ -5461,11 +4550,11 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>39</th>
-      <td>重要挽留客户</td>
-      <td>20014.0000000000</td>
-      <td>199</td>
+      <td>一般唤回客户</td>
+      <td>10015.0000000000</td>
+      <td>11</td>
       <td>11.0000000000</td>
-      <td>0.2989058502</td>
+      <td>99.7764227642</td>
     </tr>
     <tr>
       <th>40</th>
@@ -5485,11 +4574,11 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>42</th>
-      <td>一般唤回客户</td>
-      <td>9.0000000000</td>
+      <td>重要价值客户</td>
+      <td>10.0000000000</td>
       <td>14</td>
       <td>14.0000000000</td>
-      <td>14.8440579572</td>
+      <td>2.5288341646</td>
     </tr>
     <tr>
       <th>43</th>
@@ -5501,27 +4590,27 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>44</th>
-      <td>重要价值客户</td>
-      <td>10.0000000000</td>
-      <td>14</td>
-      <td>14.0000000000</td>
-      <td>2.5288341646</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>重要唤回客户</td>
-      <td>2.0000000000</td>
-      <td>52</td>
-      <td>14.0000000000</td>
-      <td>2.9033441981</td>
-    </tr>
-    <tr>
-      <th>46</th>
       <td>重要唤回客户</td>
       <td>10012.0000000000</td>
       <td>14</td>
       <td>14.0000000000</td>
       <td>3.5352481628</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>一般唤回客户</td>
+      <td>9.0000000000</td>
+      <td>14</td>
+      <td>14.0000000000</td>
+      <td>14.8440579572</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>重要唤回客户</td>
+      <td>2.0000000000</td>
+      <td>52</td>
+      <td>14.0000000000</td>
+      <td>2.9033441981</td>
     </tr>
     <tr>
       <th>47</th>
@@ -5621,7 +4710,7 @@ memory usage: 9.4 KB
       <th>2</th>
       <td>重要发展客户</td>
       <td>27938</td>
-      <td>1874132.2400000005</td>
+      <td>1874132.2400000002</td>
       <td>67.0818326294</td>
     </tr>
     <tr>
@@ -5633,16 +4722,16 @@ memory usage: 9.4 KB
     </tr>
     <tr>
       <th>4</th>
-      <td>None</td>
+      <td>不存在消费记录的用户</td>
       <td>32388</td>
-      <td>1844636.7600000009</td>
+      <td>1844636.7600000005</td>
       <td>56.9543275287</td>
     </tr>
     <tr>
       <th>5</th>
       <td>一般发展客户</td>
       <td>136510</td>
-      <td>6722328.8800000064</td>
+      <td>6722328.8800000055</td>
       <td>49.2442229873</td>
     </tr>
     <tr>
@@ -5672,8 +4761,8 @@ memory usage: 9.4 KB
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id36">
-<h1>优惠券RFM<a class="headerlink" href="#id36" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="id35">
+<h1>优惠券RFM<a class="headerlink" href="#id35" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result_df</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -5747,7 +4836,7 @@ memory usage: 9.4 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/t6/xmvwdhg96gsfj8tw02j7mgmr0000gn/T/ipykernel_26101/3574943240.py:26: UserWarning:
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/t6/xmvwdhg96gsfj8tw02j7mgmr0000gn/T/ipykernel_74226/3574943240.py:26: UserWarning:
 
 Glyph 9 (	) missing from font(s) SimHei.
 
@@ -5759,21 +4848,8 @@ Glyph 9 (	) missing from font(s) SimHei.
 <img alt="_images/9f8b80561ca5fd778b50123162e1751c0c929ccaa38981d4f1cc0845b7fc5cf3.png" src="_images/9f8b80561ca5fd778b50123162e1751c0c929ccaa38981d4f1cc0845b7fc5cf3.png" />
 </div>
 </div>
-<section id="id37">
-<h2>不同用户价值族群使用的优惠券类型占比<a class="headerlink" href="#id37" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grouped_data</span><span class="o">.</span><span class="n">Coupon_type</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;UnKnown&#39;, &#39;中比例优惠中等优惠券&#39;, &#39;中比例优惠低价优惠券&#39;, &#39;中比例优惠高价优惠券&#39;, &#39;低比例优惠中等优惠券&#39;,
-       &#39;低比例优惠低价优惠券&#39;, &#39;高比例优惠中等优惠券&#39;, &#39;高比例优惠高价优惠券&#39;], dtype=object)
-</pre></div>
-</div>
-</div>
-</div>
+<section id="id36">
+<h2>不同用户价值族群使用的优惠券类型占比<a class="headerlink" href="#id36" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grouped_data</span> <span class="o">=</span> <span class="n">result_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;用户价值族群&#39;</span><span class="p">,</span> <span class="s1">&#39;Coupon_type&#39;</span><span class="p">])[</span><span class="s1">&#39;占比&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -5790,14 +4866,14 @@ Glyph 9 (	) missing from font(s) SimHei.
 <span class="c1"># [&#39;#FFD500&#39;, &#39;#ffc000&#39;, &#39;#ffab00&#39;, &#39;#ff9500&#39;, &#39;#ff8000&#39;, &#39;#ff6b00&#39;]</span>
 
 <span class="n">color_mapping</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;UnKnown&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffc800&#39;</span><span class="p">,</span>  <span class="c1"># 浅灰色（未知）</span>
-    <span class="s1">&#39;低比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFC500&#39;</span><span class="p">,</span>  <span class="c1"># 浅黄色</span>
-    <span class="s1">&#39;低比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFD500&#39;</span><span class="p">,</span>  <span class="c1"># 中等黄色</span>
-    <span class="s1">&#39;中比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffc000&#39;</span><span class="p">,</span>  <span class="c1"># 亮黄色</span>
-    <span class="s1">&#39;中比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffab00&#39;</span><span class="p">,</span>  <span class="c1"># 金色</span>
-    <span class="s1">&#39;中比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ff9500&#39;</span><span class="p">,</span>  <span class="c1"># 深金色</span>
-    <span class="s1">&#39;高比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ff8000&#39;</span><span class="p">,</span>  <span class="c1"># 橙黄色</span>
-    <span class="s1">&#39;高比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ff6b00&#39;</span><span class="p">,</span>  <span class="c1"># 深橙色</span>
+    <span class="s1">&#39;UnKnown&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffffff&#39;</span><span class="p">,</span>  <span class="c1"># 浅灰色（未知）</span>
+    <span class="s1">&#39;低比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#fff6d6&#39;</span><span class="p">,</span>  <span class="c1"># 浅黄色</span>
+    <span class="s1">&#39;低比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffeead&#39;</span><span class="p">,</span>  <span class="c1"># 中等黄色</span>
+    <span class="s1">&#39;中比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffe682&#39;</span><span class="p">,</span>  <span class="c1"># 亮黄色</span>
+    <span class="s1">&#39;中比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFD700&#39;</span><span class="p">,</span>  <span class="c1"># 金色</span>
+    <span class="s1">&#39;中比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFBA66&#39;</span><span class="p">,</span>  <span class="c1"># 深金色</span>
+    <span class="s1">&#39;高比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FF8C00&#39;</span><span class="p">,</span>  <span class="c1"># 橙黄色</span>
+    <span class="s1">&#39;高比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#CC7000&#39;</span><span class="p">,</span>  <span class="c1"># 深橙色</span>
 <span class="p">}</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;用户价值族群&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
 
@@ -5835,7 +4911,7 @@ Glyph 9 (	) missing from font(s) SimHei.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/0421110b20c6e40a37ec64d49fe13389aba47c158efd3b3a99de3d7ceb56cb95.png" src="_images/0421110b20c6e40a37ec64d49fe13389aba47c158efd3b3a99de3d7ceb56cb95.png" />
+<img alt="_images/6b26da304d8598360bef0d560f58fe5f47234e1e7fd0cdb514a55e14bba8ed51.png" src="_images/6b26da304d8598360bef0d560f58fe5f47234e1e7fd0cdb514a55e14bba8ed51.png" />
 </div>
 </div>
 <p>使用黄色系的颜色来表示不同的优惠券类型，并且重要性越高，颜色越深，为每种优惠券类型选择不同的黄色或金色系渐变颜色。</p>
@@ -5869,14 +4945,14 @@ Glyph 9 (	) missing from font(s) SimHei.
 
 
 <span class="n">color_mapping</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;UnKnown&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffc800&#39;</span><span class="p">,</span>  <span class="c1"># 浅灰色（未知）</span>
-    <span class="s1">&#39;低比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFC500&#39;</span><span class="p">,</span>  <span class="c1"># 浅黄色</span>
-    <span class="s1">&#39;低比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFD500&#39;</span><span class="p">,</span>  <span class="c1"># 中等黄色</span>
-    <span class="s1">&#39;中比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffc000&#39;</span><span class="p">,</span>  <span class="c1"># 亮黄色</span>
-    <span class="s1">&#39;中比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffab00&#39;</span><span class="p">,</span>  <span class="c1"># 金色</span>
-    <span class="s1">&#39;中比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ff9500&#39;</span><span class="p">,</span>  <span class="c1"># 深金色</span>
-    <span class="s1">&#39;高比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ff8000&#39;</span><span class="p">,</span>  <span class="c1"># 橙黄色</span>
-    <span class="s1">&#39;高比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ff6b00&#39;</span><span class="p">,</span>  <span class="c1"># 深橙色</span>
+    <span class="s1">&#39;UnKnown&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffffff&#39;</span><span class="p">,</span>  <span class="c1"># 浅灰色（未知）</span>
+    <span class="s1">&#39;低比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#fff6d6&#39;</span><span class="p">,</span>  <span class="c1"># 浅黄色</span>
+    <span class="s1">&#39;低比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffeead&#39;</span><span class="p">,</span>  <span class="c1"># 中等黄色</span>
+    <span class="s1">&#39;中比例优惠低价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#ffe682&#39;</span><span class="p">,</span>  <span class="c1"># 亮黄色</span>
+    <span class="s1">&#39;中比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFD700&#39;</span><span class="p">,</span>  <span class="c1"># 金色</span>
+    <span class="s1">&#39;中比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FFBA66&#39;</span><span class="p">,</span>  <span class="c1"># 深金色</span>
+    <span class="s1">&#39;高比例优惠中等优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#FF8C00&#39;</span><span class="p">,</span>  <span class="c1"># 橙黄色</span>
+    <span class="s1">&#39;高比例优惠高价优惠券&#39;</span><span class="p">:</span> <span class="s1">&#39;#CC7000&#39;</span><span class="p">,</span>  <span class="c1"># 深橙色</span>
 <span class="p">}</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">grouped_data</span><span class="p">[</span><span class="n">grouped_data</span><span class="p">[</span><span class="s1">&#39;Coupon_type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;6.0&#39;</span><span class="p">])</span>
@@ -5959,12 +5035,12 @@ Glyph 9 (	) missing from font(s) SimHei.
   <tbody>
   </tbody>
 </table>
-</div></div><img alt="_images/52ac44bc566f8d92dfc986a243925b6f209705f4b0b58eea24d5ef1442e7af30.png" src="_images/52ac44bc566f8d92dfc986a243925b6f209705f4b0b58eea24d5ef1442e7af30.png" />
+</div></div><img alt="_images/18637d61ca14c57cda8629b960f62d1da6f33f1614b74ec84ecaad74dbc37cd7.png" src="_images/18637d61ca14c57cda8629b960f62d1da6f33f1614b74ec84ecaad74dbc37cd7.png" />
 </div>
 </div>
 </section>
-<section id="id38">
-<h2>结论<a class="headerlink" href="#id38" title="Link to this heading">#</a></h2>
+<section id="id37">
+<h2>结论<a class="headerlink" href="#id37" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>中比例低价优惠券，发放最多，我认为是促活用的。<br />
 因为它在活跃度较高的一般价值客户中，占比也是最大的</p></li>
@@ -5973,6 +5049,606 @@ Glyph 9 (	) missing from font(s) SimHei.
 <p>策略：
 促活可以多发放中比例低价优惠券；降低流失率，应该减少降低无效券投放</p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id38">
+<h1>风控<a class="headerlink" href="#id38" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">with t1 AS</span>
+<span class="s2">(</span>
+<span class="s2">    select count(*) as 领券总数,User_id AS 用户ID, Receive_date from user_coupon_receive</span>
+<span class="s2">           WHERE Coupon_id IS NOT NULL</span>
+<span class="s2">           group by 2, 3</span>
+<span class="s2">)</span>
+<span class="s2">SELECT * FROM t1 LEFT JOIN user_RFM USING(用户ID)</span>
+<span class="s2">WHERE Receive_date IS NOT NULL</span>
+<span class="s2">order by 领券总数 DESC</span>
+<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>领券总数</th>
+      <th>用户ID</th>
+      <th>Receive_date</th>
+      <th>用户价值族群</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>50</td>
+      <td>64f7f49aa3a6f2d3bdf579dc20f5ee7b</td>
+      <td>2023-05-19</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>50</td>
+      <td>135b607fa436226daf62b1cbf777c917</td>
+      <td>2023-01-16</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>45</td>
+      <td>135b607fa436226daf62b1cbf777c917</td>
+      <td>2023-05-27</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>42</td>
+      <td>02b1727ae62d6484c3bce3b666242ead</td>
+      <td>2023-03-01</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>40</td>
+      <td>3c9e89409f0884ec9e905c40323230a4</td>
+      <td>2023-04-15</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>37</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-11</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>36</td>
+      <td>fec7766b5ea29350082a73e014f22358</td>
+      <td>2023-01-20</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>34</td>
+      <td>da4a52ebccf7f143e38876c966b1ff38</td>
+      <td>2023-05-12</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>34</td>
+      <td>fec7766b5ea29350082a73e014f22358</td>
+      <td>2023-03-18</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>34</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-15</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>31</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-12</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>30</td>
+      <td>1299c85e6d75198f5ca20a91baae51b4</td>
+      <td>2023-03-14</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>30</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-16</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>30</td>
+      <td>8d7c90fa30a96097c5737ecafe4e57db</td>
+      <td>2023-03-25</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>30</td>
+      <td>ff64a6c6c5790b859c1e97249f36c0ba</td>
+      <td>2023-02-25</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>30</td>
+      <td>7ecc2f8801ba553a8f9bd7dddd451104</td>
+      <td>2023-03-02</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>29</td>
+      <td>9672b53f7f3eb658c50707c4956a0e2f</td>
+      <td>2023-02-01</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>29</td>
+      <td>7ecc2f8801ba553a8f9bd7dddd451104</td>
+      <td>2023-04-15</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>29</td>
+      <td>a2fde3de810b2a1f6e2adb9f6f1c0e23</td>
+      <td>2023-01-01</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>28</td>
+      <td>25820554dbcb7f9ccecf8a2a8d37dc6b</td>
+      <td>2023-06-27</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>28</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-17</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>27</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-19</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>26</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-14</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>26</td>
+      <td>9fa9ac51e71c8c059e04f274d5bd6efc</td>
+      <td>2023-04-11</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>26</td>
+      <td>bd089a2eb4fe30f3c645ec0e0c058631</td>
+      <td>2023-03-18</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>25</td>
+      <td>e683073f2f24ab8e307fbc3138416393</td>
+      <td>2023-02-27</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>25</td>
+      <td>1299c85e6d75198f5ca20a91baae51b4</td>
+      <td>2023-01-31</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>24</td>
+      <td>a256356289a2cf4edd3b0324baed4af5</td>
+      <td>2023-05-28</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>24</td>
+      <td>386ae42393c05364eb5ce86c62f6453e</td>
+      <td>2023-02-12</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>24</td>
+      <td>5d22212c8e0f5a9d037a889bf5736920</td>
+      <td>2023-05-14</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>24</td>
+      <td>a132a4442bb94ceeee4fb152cce9114a</td>
+      <td>2023-04-29</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>24</td>
+      <td>da4a52ebccf7f143e38876c966b1ff38</td>
+      <td>2023-02-17</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>23</td>
+      <td>1b4b18d638b91be57261530cced8310c</td>
+      <td>2023-01-07</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>23</td>
+      <td>8ac16d0d02600988ae6c33ea5f4b99cd</td>
+      <td>2023-05-18</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>23</td>
+      <td>1299c85e6d75198f5ca20a91baae51b4</td>
+      <td>2023-03-09</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>22</td>
+      <td>1cf1420b93c1057f0bf545fb69a3dd2e</td>
+      <td>2023-06-02</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>22</td>
+      <td>6e0dd657a906a6e72c3dab7993cc711a</td>
+      <td>2023-04-01</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>22</td>
+      <td>c7d5e76428b24a9f05498ec8497e95c4</td>
+      <td>2023-04-14</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>22</td>
+      <td>6b182b745c1de380287c392e2c18e59a</td>
+      <td>2023-01-13</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>22</td>
+      <td>950cdda64940171d81ed541e87d6cc6b</td>
+      <td>2023-03-29</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>21</td>
+      <td>ff110421440d8fcd5a53a784068c7610</td>
+      <td>2023-06-18</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>21</td>
+      <td>c5e87601fa9bcb3bf0b11895f743b0eb</td>
+      <td>2023-01-28</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>21</td>
+      <td>203059efeae080497a881e1d5d88d378</td>
+      <td>2023-01-07</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>21</td>
+      <td>0c1a17aed80a169a0c0d3bb80b17fd2e</td>
+      <td>2023-03-03</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>20</td>
+      <td>fec7766b5ea29350082a73e014f22358</td>
+      <td>2023-06-15</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>20</td>
+      <td>fec7766b5ea29350082a73e014f22358</td>
+      <td>2023-02-06</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>20</td>
+      <td>f014d8b4e73de415465ba0eefdaa7793</td>
+      <td>2023-04-09</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>20</td>
+      <td>d3b489224bd01e3c0eaf131b48500602</td>
+      <td>2023-03-01</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>20</td>
+      <td>1299c85e6d75198f5ca20a91baae51b4</td>
+      <td>2023-02-19</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>20</td>
+      <td>8ac16d0d02600988ae6c33ea5f4b99cd</td>
+      <td>2023-06-21</td>
+      <td>一般价值客户</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;select sum(Reduce_amount) as 总优惠, sum(Actual_pay) as 总支出, User_id  from order_detail</span>
+<span class="s2">       WHERE Coupon_id IS NOT NULL </span>
+<span class="s2">       AND User_id in (&#39;8ebe6816c6b51ad2c3afed2812a053b5&#39;, &#39;b083832263c1b4225990438b03056786&#39;, &#39;bc326638e3ef950e4377b0113afeab3c&#39;)</span>
+<span class="s2">       group by 3</span>
+<span class="s2">       -- order by cnt DESC</span>
+<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>总优惠</th>
+      <th>总支出</th>
+      <th>User_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>458.0000000000</td>
+      <td>5513.2000000000</td>
+      <td>bc326638e3ef950e4377b0113afeab3c</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8.0000000000</td>
+      <td>23.8000000000</td>
+      <td>b083832263c1b4225990438b03056786</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>615.5000000000</td>
+      <td>7269.9300000000</td>
+      <td>8ebe6816c6b51ad2c3afed2812a053b5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;select *  from order_detail</span>
+<span class="s2">       WHERE User_id in (&#39;b083832263c1b4225990438b03056786&#39;)</span>
+<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User_id</th>
+      <th>Shop_id</th>
+      <th>Order_id</th>
+      <th>Coupon_id</th>
+      <th>Coupon_type</th>
+      <th>Biz_code</th>
+      <th>Pay_date</th>
+      <th>Actual_pay</th>
+      <th>Reduce_amount</th>
+      <th>优惠券类别</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>b083832263c1b4225990438b03056786</td>
+      <td>b96db70b506332a7a4f44c156cb4ca1b</td>
+      <td>56d7a4c731ab3923c4ff3007b21fc662</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>2023-06-16</td>
+      <td>26.9000000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>b083832263c1b4225990438b03056786</td>
+      <td>b96db70b506332a7a4f44c156cb4ca1b</td>
+      <td>ea2da07a9a424042b9594caad4918f90</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>2023-06-13</td>
+      <td>21.9000000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>b083832263c1b4225990438b03056786</td>
+      <td>74ffd5ce40ba21c957ddb90b0e6f3f1a</td>
+      <td>c5a3728a57b6c6261a8446b1df2e94f1</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>2023-06-27</td>
+      <td>24.2800000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>b083832263c1b4225990438b03056786</td>
+      <td>6791fffb08d1b564733985c881280191</td>
+      <td>020f2f6488f87d4039e5d9fb97fc0533</td>
+      <td>df8e3a90599dd80c9d69d5533d472560</td>
+      <td>1.0000000000</td>
+      <td>D</td>
+      <td>2023-04-19</td>
+      <td>23.8000000000</td>
+      <td>8.0000000000</td>
+      <td>中比例优惠低价优惠券</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>b083832263c1b4225990438b03056786</td>
+      <td>6791fffb08d1b564733985c881280191</td>
+      <td>020f2f6488f87d4039e5d9fb97fc0533</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>2023-04-19</td>
+      <td>23.8000000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cheats_user</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">select User_id, Receive_date::Date AS Receive_date from user_coupon_receive</span>
+<span class="s2">WHERE User_id in (&#39;b083832263c1b4225990438b03056786&#39;)</span>
+<span class="s2">      &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 统计每个 Receive_date 的出现次数</span>
+<span class="n">date_counts</span> <span class="o">=</span> <span class="n">cheats_user</span><span class="p">[</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">date_counts</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">,</span> <span class="s1">&#39;Count&#39;</span><span class="p">]</span>
+
+<span class="c1"># 创建一个交互式散点图</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">date_counts</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> 
+                 <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Receive_date&#39;</span><span class="p">:</span> <span class="s1">&#39;Receive Date&#39;</span><span class="p">,</span> <span class="s1">&#39;Count&#39;</span><span class="p">:</span> <span class="s1">&#39;Count&#39;</span><span class="p">},</span>
+                 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;用户b083832263c1b4225990438b03056786的领券记录&quot;</span><span class="p">)</span>
+
+<span class="c1"># 显示点的坐标</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">),</span>
+                  <span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;Date: %</span><span class="si">{x}</span><span class="s1">&lt;br&gt;Count: %</span><span class="si">{y}</span><span class="s1">&lt;extra&gt;&lt;/extra&gt;&#39;</span><span class="p">)</span>
+
+<span class="c1"># 显示图表</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id39">
 <h1>模型<a class="headerlink" href="#id39" title="Link to this heading">#</a></h1>
@@ -5990,7 +5666,7 @@ Glyph 9 (	) missing from font(s) SimHei.
 <li><p>优惠金额</p></li>
 <li><p>优惠金额占比</p></li>
 <li><p>优惠券类型</p></li>
-<li><p>历史核销率</p></li>
+<li><p>优惠券复购率</p></li>
 </ol>
 </section>
 <section id="id42">
@@ -6011,41 +5687,1275 @@ Glyph 9 (	) missing from font(s) SimHei.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">select</span>
-<span class="s2">*</span>
-<span class="s2">from order_detail</span>
-<span class="s2">where coupon_id &gt; 1</span>
-<span class="s2">qualify row_number()over(partition by User_id order by Pay_date::date asc) &gt; 2</span>
+<span class="s2">    select</span>
+<span class="s2">        *exclude(Pay_date),</span>
+<span class="s2">        Pay_date::date as Pay_date,</span>
+<span class="s2">        优惠券类别,</span>
+<span class="s2">        用户价值族群,</span>
+<span class="s2">        lead(优惠券类别) over (partition by User_id order by Pay_date::date) as next_优惠券类别,</span>
+<span class="s2">        lead(Coupon_id) over (partition by User_id order by Pay_date::date) as next_coupon_id,</span>
+<span class="s2">        lead(Coupon_type) over (partition by User_id order by Pay_date::date) as next_Coupon_type,</span>
+<span class="s2">        case when next_coupon_id is not null then 1 else 0 end as 是否复购</span>
+<span class="s2">    from wide_df</span>
+<span class="s2">;</span>
+
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">query_df</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
+<span class="n">train_data</span>  <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="c1"># 自定义列数</span>
+<span class="n">n_cols</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># 想分几列就改这里</span>
+
+<span class="c1"># 获取查询结果</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    select round(sum(是否复购) * 100 / count(*), 2)::FLOAT as 复购率, </span>
+<span class="s2">           Coupon_type::INT as Coupon_type, </span>
+<span class="s2">           优惠券类别, </span>
+<span class="s2">           用户价值族群</span>
+<span class="s2">    from train_data    </span>
+<span class="s2">    where Coupon_type is not null      </span>
+<span class="s2">    group by 2, 3, 4      </span>
+<span class="s2">    order by Coupon_type, 复购率, 用户价值族群 desc                   </span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="c1"># 计算每列的行数</span>
+<span class="n">rows_per_col</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_cols</span><span class="p">)</span>
+
+<span class="c1"># 拆分为多个子 DataFrame</span>
+<span class="n">dfs</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">rows_per_col</span><span class="p">:(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">rows_per_col</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_cols</span><span class="p">)]</span>
+
+<span class="c1"># 转成 HTML</span>
+<span class="n">htmls</span> <span class="o">=</span> <span class="p">[</span><span class="n">subdf</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">for</span> <span class="n">subdf</span> <span class="ow">in</span> <span class="n">dfs</span><span class="p">]</span>
+
+<span class="c1"># 拼接成横向展示的 HTML</span>
+<span class="n">html_output</span> <span class="o">=</span> <span class="s1">&#39;&lt;div style=&quot;display: flex; gap: 10px;&quot;&gt;&#39;</span>
+<span class="k">for</span> <span class="n">html</span> <span class="ow">in</span> <span class="n">htmls</span><span class="p">:</span>
+    <span class="n">html_output</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;&lt;div style=&quot;flex: 1;&quot;&gt;</span><span class="si">{</span><span class="n">html</span><span class="si">}</span><span class="s1">&lt;/div&gt;&#39;</span>
+<span class="n">html_output</span> <span class="o">+=</span> <span class="s1">&#39;&lt;/div&gt;&#39;</span>
+
+<span class="c1"># 显示</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">html_output</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">BinderException</span><span class="g g-Whitespace">                           </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">294</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="s2"> select</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span><span class="s2"> *</span>
-<span class="s2">   (...)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> qualify row_number()over(partition by User_id order by Pay_date::date asc) &gt; 2</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> &quot;&quot;&quot;</span>
-<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">query_df</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
-
-<span class="nn">Cell In[182], line 9,</span> in <span class="ni">query_df</span><span class="nt">(sql)</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="k">def</span><span class="w"> </span><span class="nf">query_df</span><span class="p">(</span><span class="n">sql</span><span class="p">):</span>
-<span class="ne">----&gt; </span><span class="mi">9</span>     <span class="k">return</span> <span class="n">query</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span><span class="o">.</span><span class="n">df</span><span class="p">()</span>
-
-<span class="nn">Cell In[182], line 7,</span> in <span class="ni">query</span><span class="nt">(sql)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="n">sql</span><span class="p">):</span>
-<span class="ne">----&gt; </span><span class="mi">7</span>     <span class="k">return</span> <span class="n">duckdb</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
-
-<span class="ne">BinderException</span>: Binder Error: Cannot compare values of type VARCHAR and type INTEGER_LITERAL - an explicit cast is required
+<div class="output text_html"><div style="display: flex; gap: 10px;"><div style="flex: 1;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>复购率</th>
+      <th>Coupon_type</th>
+      <th>优惠券类别</th>
+      <th>用户价值族群</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11.7600002289</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>14.2899999619</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>22.4500007629</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>23.0000000000</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>31.4699993134</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>33.3300018311</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>33.3300018311</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>33.6599998474</td>
+      <td>0</td>
+      <td>低比例优惠中等优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>23.4500007629</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>23.5699996948</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>23.8199996948</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>23.9699993134</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>30.2099990845</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>31.7900009155</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>33.6899986267</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>34.4199981689</td>
+      <td>1</td>
+      <td>中比例优惠低价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>30.9899997711</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>33.3300018311</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>34.2500000000</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>34.6199989319</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>35.8499984741</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>42.2700004578</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>44.4399986267</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>44.5200004578</td>
+      <td>2</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+  </tbody>
+</table></div><div style="flex: 1;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>复购率</th>
+      <th>Coupon_type</th>
+      <th>优惠券类别</th>
+      <th>用户价值族群</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>34.2099990845</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>38.8300018311</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>40.3100013733</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>43.6199989319</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>47.2799987793</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>54.2999992371</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>55.3800010681</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>61.0800018311</td>
+      <td>3</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>21.3199996948</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>24.2700004578</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>24.3999996185</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>26.4599990845</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>32.2999992371</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>32.7999992371</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>34.4000015259</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>36.2799987793</td>
+      <td>4</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>20.0000000000</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>21.4300003052</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>28.5499992371</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>32.4300003052</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>33.3300018311</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>33.3300018311</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>35.2900009155</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>38.2700004578</td>
+      <td>5</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+  </tbody>
+</table></div><div style="flex: 1;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>复购率</th>
+      <th>Coupon_type</th>
+      <th>优惠券类别</th>
+      <th>用户价值族群</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>50.6199989319</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>53.2200012207</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>55.8600006104</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>59.3499984741</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>62.3699989319</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>65.5199966431</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>66.3600006104</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>72.9499969482</td>
+      <td>6</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>0.0000000000</td>
+      <td>9</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>0.0000000000</td>
+      <td>9</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>40.6300010681</td>
+      <td>9</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>42.8600006104</td>
+      <td>9</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>43.7500000000</td>
+      <td>9</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>45.4500007629</td>
+      <td>9</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>50.0000000000</td>
+      <td>9</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>26.5300006866</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>28.5699996948</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>33.3300018311</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>35.7099990845</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>40.9500007629</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>43.0400009155</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>50.0000000000</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>80.0000000000</td>
+      <td>10</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>0.0000000000</td>
+      <td>11</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+  </tbody>
+</table></div><div style="flex: 1;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>复购率</th>
+      <th>Coupon_type</th>
+      <th>优惠券类别</th>
+      <th>用户价值族群</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.0000000000</td>
+      <td>11</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>0.0000000000</td>
+      <td>11</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>40.5900001526</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>51.8699989319</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>56.8499984741</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>57.1399993896</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>69.0500030518</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>70.0899963379</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>75.1699981689</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>76.7799987793</td>
+      <td>10010</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>42.8600006104</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>49.4399986267</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>57.1399993896</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>63.1599998474</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>68.8899993896</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>71.4300003052</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>74.4899978638</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>83.7200012207</td>
+      <td>10012</td>
+      <td>高比例优惠高价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>0.0000000000</td>
+      <td>10015</td>
+      <td>高比例优惠中等优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>5.8800001144</td>
+      <td>10015</td>
+      <td>高比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>21.3700008392</td>
+      <td>10015</td>
+      <td>高比例优惠中等优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>29.1700000763</td>
+      <td>10015</td>
+      <td>高比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>45.4500007629</td>
+      <td>10015</td>
+      <td>高比例优惠中等优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>50.0000000000</td>
+      <td>10015</td>
+      <td>高比例优惠中等优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+  </tbody>
+</table></div><div style="flex: 1;"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>复购率</th>
+      <th>Coupon_type</th>
+      <th>优惠券类别</th>
+      <th>用户价值族群</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>25.0000000000</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>30.2999992371</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>31.6100006104</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>39.6399993896</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>52.7299995422</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>57.1399993896</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>64.7600021362</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>69.0899963379</td>
+      <td>20011</td>
+      <td>中比例优惠高价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>0.0000000000</td>
+      <td>20013</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>40.7400016785</td>
+      <td>20013</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>45.8300018311</td>
+      <td>20013</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>50.0000000000</td>
+      <td>20013</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>50.0000000000</td>
+      <td>20013</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+    <tr>
+      <td>64.1500015259</td>
+      <td>20013</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>87.5000000000</td>
+      <td>20013</td>
+      <td>中比例优惠中等优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>44.7200012207</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要挽留客户</td>
+    </tr>
+    <tr>
+      <td>49.8300018311</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般挽留客户</td>
+    </tr>
+    <tr>
+      <td>50.0000000000</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要发展客户</td>
+    </tr>
+    <tr>
+      <td>51.8100013733</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般发展客户</td>
+    </tr>
+    <tr>
+      <td>63.5499992371</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要价值客户</td>
+    </tr>
+    <tr>
+      <td>65.5599975586</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般唤回客户</td>
+    </tr>
+    <tr>
+      <td>66.5400009155</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>一般价值客户</td>
+    </tr>
+    <tr>
+      <td>68.5699996948</td>
+      <td>20014</td>
+      <td>低比例优惠低价优惠券</td>
+      <td>重要唤回客户</td>
+    </tr>
+  </tbody>
+</table></div></div></div></div>
+</div>
+</section>
+<section id="part-3">
+<h2>Part 3 特征工程<a class="headerlink" href="#part-3" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">train_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User_id</th>
+      <th>Shop_id</th>
+      <th>Order_id</th>
+      <th>Coupon_id</th>
+      <th>Coupon_type</th>
+      <th>Biz_code</th>
+      <th>Actual_pay</th>
+      <th>Reduce_amount</th>
+      <th>优惠券类别</th>
+      <th>用户价值族群</th>
+      <th>Actual_pay_log</th>
+      <th>Reduce_amount_log</th>
+      <th>Pay_date</th>
+      <th>优惠券类别_1</th>
+      <th>用户价值族群_1</th>
+      <th>next_优惠券类别</th>
+      <th>next_coupon_id</th>
+      <th>next_Coupon_type</th>
+      <th>是否复购</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>9520a932cd79c952c1f4555ae1d2fedc</td>
+      <td>7550d9c1ef1e3db78ad6a37fa2cd9243</td>
+      <td>b7a7240fd7d3ed8ed7e5f15b520a1ce1</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>29.5000000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>3.4177266836</td>
+      <td>0.0000000000</td>
+      <td>2023-04-06</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>9520a932cd79c952c1f4555ae1d2fedc</td>
+      <td>2ada2f83375207b727b13c0062476ac4</td>
+      <td>e8107199a708ff092071515e3577a9e1</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>29.4000000000</td>
+      <td>0.5200000000</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>3.4314032237</td>
+      <td>0.4187103349</td>
+      <td>2023-04-06</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>9520a932cd79c952c1f4555ae1d2fedc</td>
+      <td>0e044139182fcf8efd31986105dde5d5</td>
+      <td>d1f6536632f023a097885c015cb5a90b</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>24.0000000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>3.2188758249</td>
+      <td>0.0000000000</td>
+      <td>2023-04-07</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9520a932cd79c952c1f4555ae1d2fedc</td>
+      <td>0e044139182fcf8efd31986105dde5d5</td>
+      <td>a00153b3e64e712244722f355b1effc3</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>30.9000000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>3.4626060098</td>
+      <td>0.0000000000</td>
+      <td>2023-04-08</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9520a932cd79c952c1f4555ae1d2fedc</td>
+      <td>0e044139182fcf8efd31986105dde5d5</td>
+      <td>76417c49260f5295bc14f3aadf8a8568</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>D</td>
+      <td>30.9000000000</td>
+      <td>0.0000000000</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>3.4626060098</td>
+      <td>0.0000000000</td>
+      <td>2023-04-09</td>
+      <td>None</td>
+      <td>一般价值客户</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. 用户复购率</span>
+<span class="c1"># 2. 用户在Coupon_type下的复购率</span>
+<span class="c1"># 3. 用户核销率</span>
+<span class="n">fea</span> <span class="o">=</span> <span class="n">query_df</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">select </span>
+<span class="s1">train_data.*exclude(Coupon_type),</span>
+<span class="s1">train_data.Coupon_type::varchar as Coupon_type,</span>
+
+<span class="s1">              </span>
+<span class="s1">count(*) over (partition by train_data.User_id) * 100 / coalesce(用户领券数, 0)  用户核销率,                   </span>
+<span class="s1">sum(是否复购) over (partition by train_data.User_id, train_data.Coupon_type) * 100 / count(*) over (partition by train_data.User_id, train_data.Coupon_type) as 用户在此类优惠券下的复购率,</span>
+<span class="s1">sum(Reduce_amount) over (partition by train_data.User_id, train_data.Coupon_type) * 100/ sum(Actual_pay + Reduce_amount) over (partition by train_data.User_id, train_data.Coupon_type)  as 用户在此类优惠券下的优惠占比,      </span>
+
+
+<span class="s1">sum(是否复购) over (partition by train_data.Coupon_type) * 100  / count(*) over (partition by train_data.Coupon_type) as 优惠券复购率,               </span>
+<span class="s1">count(*) over (partition by train_data.Coupon_type) * 100 / coalesce(优惠券发放数, 0)  优惠券核销率,</span>
+<span class="s1">sum(Reduce_amount) over (partition by train_data.Coupon_type) * 100/ sum(Actual_pay + Reduce_amount) over (partition by train_data.Coupon_type)  as 此类优惠券的优惠占比,</span>
+<span class="s1">      </span>
+<span class="s1">sum(Reduce_amount) over (partition by train_data.Coupon_id) * 100/ sum(Actual_pay + Reduce_amount) over (partition by train_data.Coupon_id)  as 此优惠券的优惠占比                              </span>
+<span class="s1">                                                  </span>
+<span class="s1">from train_data</span>
+<span class="s1">left join(select User_id, count(*) 用户领券数 from user_coupon_receive group by 1) t1 on train_data.User_id = t1.User_id                   </span>
+<span class="s1">left join(select Coupon_type, count(*) 优惠券发放数 from user_coupon_receive group by 1) t2 on train_data.Coupon_type = t2.Coupon_type                </span>
+
+<span class="s1">where train_data.Coupon_type is not null         </span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fea</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;User_id&#39;,
+ &#39;Shop_id&#39;,
+ &#39;Order_id&#39;,
+ &#39;Coupon_id&#39;,
+ &#39;Biz_code&#39;,
+ &#39;Actual_pay&#39;,
+ &#39;Reduce_amount&#39;,
+ &#39;优惠券类别&#39;,
+ &#39;用户价值族群&#39;,
+ &#39;Actual_pay_log&#39;,
+ &#39;Reduce_amount_log&#39;,
+ &#39;Pay_date&#39;,
+ &#39;优惠券类别_1&#39;,
+ &#39;用户价值族群_1&#39;,
+ &#39;next_优惠券类别&#39;,
+ &#39;next_coupon_id&#39;,
+ &#39;next_Coupon_type&#39;,
+ &#39;是否复购&#39;,
+ &#39;Coupon_type&#39;,
+ &#39;用户核销率&#39;,
+ &#39;用户在此类优惠券下的复购率&#39;,
+ &#39;用户在此类优惠券下的优惠占比&#39;,
+ &#39;优惠券复购率&#39;,
+ &#39;优惠券核销率&#39;,
+ &#39;此类优惠券的优惠占比&#39;,
+ &#39;此优惠券的优惠占比&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="part-4">
+<h2>Part 4 模型<a class="headerlink" href="#part-4" title="Link to this heading">#</a></h2>
+<p>我们会用：</p>
+<p>📦 scikit-learn</p>
+<p>🧠 模型：LogisticRegression（逻辑回归，快速可解释）</p>
+<p>🔍 特征：Coupon_type, 优惠券类别, 用户价值族群, next_优惠券类别, next_Coupon_type 等等</p>
+<p>🧪 切分训练 / 测试集，评估准确率、召回率等</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">catboost</span><span class="w"> </span><span class="kn">import</span> <span class="n">CatBoostClassifier</span><span class="p">,</span> <span class="n">Pool</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span>
+
+<span class="c1"># 特征列（可以加更多你觉得重要的）</span>
+<span class="n">feature_cols</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># &#39;User_id&#39;,</span>
+    <span class="c1"># &#39;Coupon_id&#39;,</span>
+    <span class="c1"># &#39;Pay_date&#39;,</span>
+    <span class="s1">&#39;优惠券类别&#39;</span><span class="p">,</span>
+    <span class="c1"># &#39;用户价值族群&#39;,</span>
+    <span class="c1"># &#39;next_优惠券类别&#39;,</span>
+    <span class="c1"># &#39;next_coupon_id&#39;,</span>
+    <span class="c1"># &#39;next_Coupon_type&#39;,</span>
+    <span class="s1">&#39;Coupon_type&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;用户核销率&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;用户在此类优惠券下的复购率&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;优惠券复购率&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;优惠券核销率&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;用户在此类优惠券下的优惠占比&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;此类优惠券的优惠占比&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;此优惠券的优惠占比&#39;</span>
+ <span class="p">]</span>
+
+<span class="c1"># 标明哪些是类别特征（CatBoost 可以直接处理）</span>
+<span class="n">cat_features</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># &#39;用户价值族群&#39;,</span>
+    <span class="s1">&#39;优惠券类别&#39;</span><span class="p">,</span>
+    <span class="c1"># &#39;Coupon_type&#39;</span>
+<span class="p">]</span>
+
+
+<span class="c1"># 丢掉缺失目标行（标签没缺也OK）</span>
+<span class="n">df_model</span> <span class="o">=</span> <span class="n">fea</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;优惠券类别&#39;</span><span class="p">])</span>
+
+<span class="c1"># 特征 + 标签</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_model</span><span class="p">[</span><span class="n">feature_cols</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_model</span><span class="p">[</span><span class="s1">&#39;是否复购&#39;</span><span class="p">]</span>
+
+<span class="c1"># 划分训练集 / 测试集</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+<span class="p">)</span>
+
+
+
+<span class="c1"># 建模</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">CatBoostClassifier</span><span class="p">(</span>
+    <span class="n">iterations</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+    <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+    <span class="n">depth</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="n">eval_metric</span><span class="o">=</span><span class="s1">&#39;F1&#39;</span><span class="p">,</span>
+    <span class="n">random_seed</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">50</span>
+<span class="p">)</span>
+
+<span class="c1"># 拟合</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cat_features</span><span class="o">=</span><span class="n">cat_features</span><span class="p">,</span> <span class="n">eval_set</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">),</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># 预测</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># 输出结果</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0:	learn: 0.2573504	test: 0.2554246	best: 0.2554246 (0)	total: 70.1ms	remaining: 21s
+50:	learn: 0.3214085	test: 0.3189272	best: 0.3189272 (50)	total: 2.79s	remaining: 13.6s
+100:	learn: 0.3276372	test: 0.3258103	best: 0.3258103 (100)	total: 5.23s	remaining: 10.3s
+150:	learn: 0.3270367	test: 0.3249316	best: 0.3260667 (101)	total: 7.69s	remaining: 7.59s
+200:	learn: 0.3273544	test: 0.3255151	best: 0.3260667 (101)	total: 10.1s	remaining: 4.97s
+250:	learn: 0.3280593	test: 0.3258080	best: 0.3260667 (101)	total: 12.5s	remaining: 2.44s
+299:	learn: 0.3287711	test: 0.3266151	best: 0.3266341 (298)	total: 15.1s	remaining: 0us
+
+bestTest = 0.3266341375
+bestIteration = 298
+
+Shrink model to first 299 iterations.
+              precision    recall  f1-score   support
+
+           0       0.69      0.95      0.80    124018
+           1       0.72      0.21      0.33     67931
+
+    accuracy                           0.69    191949
+   macro avg       0.70      0.58      0.56    191949
+weighted avg       0.70      0.69      0.63    191949
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">precision_recall_curve</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">y_pred_proba</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">thresholds</span> <span class="o">=</span> <span class="n">precision_recall_curve</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_proba</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">thresholds</span><span class="p">,</span> <span class="n">precision</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Precision&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">thresholds</span><span class="p">,</span> <span class="n">recall</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Recall&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Threshold=0.3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Threshold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Precision-Recall vs Threshold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/67b7f360512682ec456b561297296e70e29417b9dc9358557a0e6d6c8f7afcd1.png" src="_images/67b7f360512682ec456b561297296e70e29417b9dc9358557a0e6d6c8f7afcd1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">get_feature_importance</span><span class="p">(</span><span class="n">prettified</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Feature Id</th>
+      <th>Importances</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>用户在此类优惠券下的复购率</td>
+      <td>81.2997303654</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>优惠券复购率</td>
+      <td>5.6868594536</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>优惠券类别</td>
+      <td>3.0069474692</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>用户核销率</td>
+      <td>2.3678478861</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Coupon_type</td>
+      <td>1.9523072000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>优惠券核销率</td>
+      <td>1.8432244646</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>此类优惠券的优惠占比</td>
+      <td>1.3471976073</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>此优惠券的优惠占比</td>
+      <td>1.2608870207</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>用户在此类优惠券下的优惠占比</td>
+      <td>1.2349985332</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </section>
 </section>
@@ -6146,18 +7056,18 @@ Glyph 9 (	) missing from font(s) SimHei.
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">用户价值分类统计</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">风控</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">RFM + 用户转化分析</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">不同价值族群的转化漏斗</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">不同用户价值族群的消费分布</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">RFM + 用户转化分析</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">不同价值族群的转化漏斗</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">不同用户价值族群的消费分布</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">优惠券RFM</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">不同用户价值族群使用的优惠券类型占比</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">优惠券RFM</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">不同用户价值族群使用的优惠券类型占比</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#top1unkown">不同用户价值族群使用的优惠券类型占比(去除top1和Unkown)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">结论</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">结论</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">风控</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">模型</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1">Part 1 概述</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">标签</a></li>
@@ -6166,6 +7076,8 @@ Glyph 9 (	) missing from font(s) SimHei.
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2">Part 2 标签构建</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3">Part 3 特征工程</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-4">Part 4 模型</a></li>
 </ul>
 </li>
 </ul>
